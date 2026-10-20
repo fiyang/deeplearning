@@ -1,0 +1,6 @@
+# Original generative-recommendation dependency ranges, not a complete lockfile.
+# Install in recommendation/generative_beauty/.venv on the remote machine.
+sentence-transformers>=5,<6
+transformers>=4.51,<5
+scikit-learn
+sentencepiece

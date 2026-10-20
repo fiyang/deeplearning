@@ -1,0 +1,6 @@
+# Historical base environment. Install on the remote machine only.
+# Keep the AutoDL image's CUDA build of torch/torchvision when already installed.
+torch==2.8.0
+torchvision==0.23.0
+numpy==2.3.2
+matplotlib==3.10.5

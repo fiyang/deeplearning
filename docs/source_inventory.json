@@ -1,0 +1,960 @@
+{
+  "imported_at": "2026-10-20",
+  "remote_verified": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:10:00.227Z",
+      "imported_sha256": "8d23dc2f1c7a73772b29b9ae34bc86045a19dffcf686d2d68e0d1e6d0daac34a"
+    },
+    {
+      "path": "COMPARISON.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:47:24.855Z",
+      "imported_sha256": "bda83349715d1e10047ed5d732a5fff060fa92ff0286a246ceda5e4db8e720ca"
+    },
+    {
+      "path": "INFERENCE.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:30:24.884Z",
+      "imported_sha256": "72276660e369f83121d5f217698d3c34d98cdeb24312bdebfe6c8e56cd8699c4"
+    },
+    {
+      "path": "MODELS.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:47:24.855Z",
+      "imported_sha256": "c588d3827a06e60ab629b8b8a87e0b17b866977b43737ea051839074b0f9b4a6"
+    },
+    {
+      "path": "CIFAR10.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:11:46.505Z",
+      "imported_sha256": "2b216e62079ebcbcef6400fc9819aa2b76fd994f37de108853d464301596ba2d"
+    },
+    {
+      "path": "RESULTS.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:14:07.308Z",
+      "imported_sha256": "fb239bf12c06b60daaeb92f3f18fc1c0c023d18673bc8bdb9ba44530b517bb5f"
+    },
+    {
+      "path": "VIT_SCALING.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:11:46.505Z",
+      "imported_sha256": "5ef3515de2987d1c6bf5142fa786f965d9664c24c08a0ba10ce33b5241d6a757"
+    },
+    {
+      "path": "VIT_TUNING.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T08:51:11.998Z",
+      "imported_sha256": "7fb3b9fd7a71c79df56905a9830c3459a316aeb05fdafcf055cb6ee53109bf5a"
+    },
+    {
+      "path": "benchmark_inference.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:09:21.589Z",
+      "imported_sha256": "c612590186fe6dc03efbd78074648afdddfbf4f71378f689165d1d37ebf590b7"
+    },
+    {
+      "path": "check_inference_accuracy.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:28:03.743Z",
+      "imported_sha256": "46ce9f365451e8b13a939ad79e8c281008c6222e1396bc26e0852d2cc6a601e7"
+    },
+    {
+      "path": "check_inference_service.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:05:15.015Z",
+      "imported_sha256": "2dabbef56a4e9307afc4cbec485eb563679c3a44492809f2d2662bc057ece1d2"
+    },
+    {
+      "path": "check_models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T08:04:16.407Z",
+      "imported_sha256": "ab378125ea613b9e2bbd537e6efcc38d5aadfe5d7735a89877e4ddebb0fd6401"
+    },
+    {
+      "path": "check_vit_compatibility.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:49:13.776Z",
+      "imported_sha256": "190b6f1125168448234102eb08007ca337e6a42cfb5a304391db3b005441e0d5"
+    },
+    {
+      "path": "check_vit_training.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:49:13.776Z",
+      "imported_sha256": "77bad6dd00366ada6bb971cfa067afa306d6581ef8c1532bc6ea94d3968ea3b2"
+    },
+    {
+      "path": "compare_models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T08:04:16.407Z",
+      "imported_sha256": "ec6a38fc6cc621f87ed5b18f65c8d05bf4d6b27f7547eaf70ac10fc46ab50d7e"
+    },
+    {
+      "path": "infer_model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:34:23.839Z",
+      "imported_sha256": "daebe50a8ec1b42b856cc7b9c01c270e2d6f160f87dd51cd0fcdb47d5aa1fe9b"
+    },
+    {
+      "path": "inference_service.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T13:30:42.968Z",
+      "imported_sha256": "7b32d6e10f04fc43daa1e065c445033fba91d0dd42f6b0a64d269e51717300f7"
+    },
+    {
+      "path": "models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:45:10.489Z",
+      "imported_sha256": "089ffe745a3fa567fe4b0132bd2dcb7be61c960c7a55d453fa98a8257b023dfe"
+    },
+    {
+      "path": "predict.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:10:00.227Z",
+      "imported_sha256": "a5d81fe7b76a88d4d574e39485ff6410064821e2f7cb562d5362c6e40b8a863f"
+    },
+    {
+      "path": "prepare_data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:10:00.227Z",
+      "imported_sha256": "d23cb725699cea4dfab5f20d4b27bdc3e2e117c10a2f7828cb7b9a3ffde6d4a2"
+    },
+    {
+      "path": "recommendation/AUC_EXPERIMENT.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:12:32.305Z",
+      "imported_sha256": "083bdfabce278dee285e4f884e51d63012c7bbaa0b8ab197c246f7a194a51fdf"
+    },
+    {
+      "path": "recommendation/FEATURES.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:32:25.367Z",
+      "imported_sha256": "2b02a029e524b0025fd52491cae14dba8f5ddbad05c5a4ec5e4f00e7bd3aceda"
+    },
+    {
+      "path": "recommendation/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:16:39.841Z",
+      "imported_sha256": "2c3edcca335834d81eb65ef428bc32e6508db4d16f8bd610c4f9b29c9af18f0a"
+    },
+    {
+      "path": "recommendation/SEQUENCE_EXPERIMENT.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:46:15.920Z",
+      "imported_sha256": "1a0805abe44b2e3cfddc0b6f0d15399614b0fbc22f02e39766fe9cba5161207c"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:34:58.351Z",
+      "imported_sha256": "6b924c1841e26ffa572c6615a206f6147a836e9e7e866941a40f9a0634423694"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/metrics.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T08:59:23.552Z",
+      "imported_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:00:55.619Z",
+      "imported_sha256": "1fb702a8f2c98e00f8c201a531621dd7d62deecbd10018ef87fc0c9a6b38abe4"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/prepare.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:00:55.619Z",
+      "imported_sha256": "ff4831ae75e7cbd5e8527982ac4942350511df9257cfe3d86351130af2e33043"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/raw_data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T08:59:23.552Z",
+      "imported_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/start.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:02:49.765Z",
+      "imported_sha256": "7e065a76adfe01be73c98ba625fd56bbd5f4fe33de5b240b651fa8220eb375be"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/test_author_port.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:04:28.410Z",
+      "imported_sha256": "9540e4b6e621367604ac963f96e97ed424d7bf7fdd47d0af00fe6fedbe69256b"
+    },
+    {
+      "path": "recommendation/aitm_aliccp_official/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:02:49.765Z",
+      "imported_sha256": "07ef777249834ad736019857def0b6f47469c6c7a2620ec6ecf320700fe8a88e"
+    },
+    {
+      "path": "recommendation/auc_data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:59:34.290Z",
+      "imported_sha256": "bb36a732b39ecb82286c0038d350d0262a6957898b612307120e0dd8e2838240"
+    },
+    {
+      "path": "recommendation/auc_models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:59:34.290Z",
+      "imported_sha256": "ede714ddfe2c0226d4ed621cd1c1e363d67a395e85b8c5db89de5be7cf473e51"
+    },
+    {
+      "path": "recommendation/esmm/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:00:38.594Z",
+      "imported_sha256": "038522e1f40a0fb892b24e7ebcf06e4c0b15c34b55d64e77221f051554528910"
+    },
+    {
+      "path": "recommendation/esmm/data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:58:54.751Z",
+      "imported_sha256": "7a25a9c3a8ff0646b77a35a400001169c546e350edadd714a7e38e8e86816ac9"
+    },
+    {
+      "path": "recommendation/esmm/metrics.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:54:14.632Z",
+      "imported_sha256": "db62bf5a38fb8ff60d319d7557465cef3f3dfa0681e4521b03967f7c54243aac"
+    },
+    {
+      "path": "recommendation/esmm/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:54:14.632Z",
+      "imported_sha256": "13bcf509207e747e4ff66dac8499124ce2fb4f25a4f66e0c1c1697deb5e2556e"
+    },
+    {
+      "path": "recommendation/esmm/report.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:00:38.594Z",
+      "imported_sha256": "9e9c84d4de2bc2bb552e4128dc90e136aee9127111bf2fdae05b5314efb50b74"
+    },
+    {
+      "path": "recommendation/esmm/score.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:57:36.448Z",
+      "imported_sha256": "872e02ba1fb39acc9f87aaf245947f82543fec70e829c3c76824488970685665"
+    },
+    {
+      "path": "recommendation/esmm/start.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:56:23.089Z",
+      "imported_sha256": "63a8152ab88fae6ba6d1df3c31a2d0e618aa28c255a553a7d5dac808b72e8ae9"
+    },
+    {
+      "path": "recommendation/esmm/test_esmm.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:03:55.403Z",
+      "imported_sha256": "f1846ab084ae9f6839434b6c7725e90b02d1adc3f2f9cb1e545b61144bcf71ec"
+    },
+    {
+      "path": "recommendation/esmm/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T03:57:36.448Z",
+      "imported_sha256": "c6437e370adda0ae25fe46870f43876058a950d0a6ba9ee7d8a93575a3e0e0b0"
+    },
+    {
+      "path": "recommendation/esmm/verify.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:03:55.403Z",
+      "imported_sha256": "d1c7630190d50a3d6ab22b19fdb6129d9ec55afc7bd9ad4c85fc2b1fb086a062"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:34:55.801Z",
+      "imported_sha256": "5eb89b2d8fb7e9ff6b3727a458090b623334c94f928993b38ae5ba78a4b394b9"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:30:02.372Z",
+      "imported_sha256": "d14cb40c4ba50e7023e21fd442fb2bd8916f7d84ac050797b61576dfba84088d"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/metrics.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:28:04.458Z",
+      "imported_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:28:04.458Z",
+      "imported_sha256": "be69123aec74de0a3b32d368b14e65a0ebe5d3703805ce9021ed0ca6d0681ac5"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/report.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:34:55.801Z",
+      "imported_sha256": "8a6397510b9691796c83a4833e1b87ea49a052ad2f5a60902395a7265d38c44f"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/score.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:34:55.801Z",
+      "imported_sha256": "45b96b77fb0ad873e811ced77e2c027227d9f2c0f8a64dff33849c8635d60fb0"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/start.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:35:10.842Z",
+      "imported_sha256": "01fa68c1f71a487e5c965ca5fa85541f53adbaf1351a34bd9cf35fb02f5e094c"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/test_aliccp.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:28:04.458Z",
+      "imported_sha256": "828cf046e28994db3e8629e24a918a34599a7737590a74c848befea17005f5aa"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:35:10.842Z",
+      "imported_sha256": "c8bf5e8e6247e53f57fb08730e43ba69bcc0c0ca9f350ca54d52bbf38032736b"
+    },
+    {
+      "path": "recommendation/esmm_aliccp/verify.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T04:34:55.801Z",
+      "imported_sha256": "46ff0e49b5ca7ad5203635e34bd933cab225834a507007465d527ef28ceba1d9"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:06:41.203Z",
+      "imported_sha256": "26b24d3b17f4cc162b5d73b814d537dcabfa9ecdc2a458e82447c879fab5e756"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/base_model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:58:24.982Z",
+      "imported_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:58:24.982Z",
+      "imported_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/metrics.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:58:24.982Z",
+      "imported_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:58:24.982Z",
+      "imported_sha256": "3f9a6940119681f60118df6caf5dbe4bf2dd1d483972e30f439cdfe679695c58"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/run_when_ready.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:04:25.988Z",
+      "imported_sha256": "e6c75f004b53a90605f0ecc263ab70df7cdedd80a92d7dd66a03c78d5d40d0ef"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/smoke_batch.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:00:49.892Z",
+      "imported_sha256": "2e0f6ab3298fe9617d90bdaca93e63dd2181181fb36213e7071b2d0558c85e1c"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/start.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:02:48.373Z",
+      "imported_sha256": "4ce9806f61058b5d0ab6686489c9259d090110ae1d751b7243a2111229ddd26e"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/test_attention.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:00:49.892Z",
+      "imported_sha256": "44c06f2b6a5e317ee1ae65813373c0faeaa47382e2881f621888ebe68841a701"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/test_queue.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T11:05:36.050Z",
+      "imported_sha256": "b8dbed509f2f8a6337d68aa3039b7fc3e6b1fdfd3c210c8b279600f56b1c05f2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_attention/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:59:12.512Z",
+      "imported_sha256": "2800b49e90dc7228dd7e7b8e61dc6a6c742c98a6b4286abe85b5df141e39e9b4"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:54:33.643Z",
+      "imported_sha256": "be3e5970f239a18e80a20a44951b79da58d55d325f5c92d69bec8e266d402fc2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:30:56.977Z",
+      "imported_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/download.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:21:09.961Z",
+      "imported_sha256": "f8f09adcb87526d3ce35a7aace9db99f203e0fa17de28bb3c8167597a0049a20"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/download_full.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:48:11.316Z",
+      "imported_sha256": "abbe6168af3f004c82e564af3486d55a39b55202604258f6fcb343571112d763"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/download_ranges.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:35:17.535Z",
+      "imported_sha256": "d4b3ed997880214f42e67a43f5a396641c57cf6630aab7a6c1b88772c00ceced"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/metrics.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:19:59.627Z",
+      "imported_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T07:32:40.761Z",
+      "imported_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/prepare.cpp",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:18:15.099Z",
+      "imported_sha256": "e7523fb647bd7ddb648e33e1355a1377217fbf0b331f5e16110b7a9bbc9413d2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/prepare_full.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:24:33.714Z",
+      "imported_sha256": "b73d666a3d9e60b2f371a8dfa03c1d9b1f165a95a89227016b476915afb87a8d"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/start_full.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:48:11.316Z",
+      "imported_sha256": "9bf974e355ed3cc65f208114ab8b66823a619d42cae8d0a7a365096b2c95e5f8"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/start_id64.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T07:35:26.285Z",
+      "imported_sha256": "94e399a776ae3df3586e2dff8f42e044f7fc1bbcb999e5c46ba5351d2475f358"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/start_id64_lr1e4.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T10:53:21.718Z",
+      "imported_sha256": "79376cfd61fff3ef11f3a54b86513c8a0237fc1829aff3f1c6ac47ce8891991e"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/start_id64_lr3e4.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:44:19.056Z",
+      "imported_sha256": "c18b7b2038edf6a252869ad05ec15b5044ba6ea354df5fbe87b9345f2cfbf6cf"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/test_download.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:25:18.683Z",
+      "imported_sha256": "f56eb5cff881f36a2de60958e0319cc7003f593f9eae1216acc0c0745ec20e72"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/test_mixed_embedding.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T07:35:26.285Z",
+      "imported_sha256": "1ed609d43419ab646fbe172bbe6493e18b588975eb4cf2d0aae3b7369105b6ce"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/test_pipeline.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:30:56.977Z",
+      "imported_sha256": "848ff9b7306717ff5f6e1c7eb6a03b5f805f3aea2a98360df4663155f04c3353"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/test_ranges.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:35:17.535Z",
+      "imported_sha256": "97702a2d38815aa03695ade838d5e6e5d465e6e9c96c5b745282514c1f478d8f"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T09:44:19.056Z",
+      "imported_sha256": "515e11294345daebec8d4e14037d495e35c93f6c07f9845af16bd971c25c6be2"
+    },
+    {
+      "path": "recommendation/esmm_aliccp_full/verify_raw.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T05:28:20.247Z",
+      "imported_sha256": "ed3857d306e720e2f208a2dc64692245fcdda4f54b0ac05f3f19d83c7f249f0b"
+    },
+    {
+      "path": "recommendation/feature_model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:25:17.390Z",
+      "imported_sha256": "3b0f3c64c3984f81fad28c5b44b6d4e59b8c434ee5416771791132f90befd927"
+    },
+    {
+      "path": "recommendation/features.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:25:17.390Z",
+      "imported_sha256": "15445de66424f0b7e263b426e233e710383bf05145f750b3d6b1dc2be811af60"
+    },
+    {
+      "path": "recommendation/generative_beauty/CURRENT_RUN.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:31:56.171Z",
+      "imported_sha256": "6f2e452fc6369c8a04bf9ae3f4ab53cca58de982d7ad6b68ac729484288f2e4a"
+    },
+    {
+      "path": "recommendation/generative_beauty/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:14:06.835Z",
+      "imported_sha256": "4608ac76f116e7b222a3d14d62194bd43877f811e606766756af358ff36fab52"
+    },
+    {
+      "path": "recommendation/generative_beauty/download.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:03:50.017Z",
+      "imported_sha256": "ae27d316ae7c70b560444d52b3fdd4fbb614a46a0027cc694c6bd48769960d00"
+    },
+    {
+      "path": "recommendation/generative_beauty/models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:05:58.057Z",
+      "imported_sha256": "338000f0ddc147d1f9c4fc7d702771b7d106d4b7b7c51896f2386891f893c6e6"
+    },
+    {
+      "path": "recommendation/generative_beauty/prepare.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:11:34.297Z",
+      "imported_sha256": "9455778a35e981e70313bc09af671064cb08be345ca846098c38b6a8b66e2a0e"
+    },
+    {
+      "path": "recommendation/generative_beauty/recommend.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:14:06.835Z",
+      "imported_sha256": "feb7ffac54aa24162677e0eb9ebc773c18826c3dc0765a1d9db9a25b88b07b86"
+    },
+    {
+      "path": "recommendation/generative_beauty/start_train.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:09:18.236Z",
+      "imported_sha256": "8ae3c80b8b951dc2f54c351c9390ff683e647449c0d63d19131bac6c8048e244"
+    },
+    {
+      "path": "recommendation/generative_beauty/test_pipeline.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:09:18.236Z",
+      "imported_sha256": "d1286ad0249a9bf62ffde1b41c707e9a3c37c5b50d93caa627d8ad7c2ed18328"
+    },
+    {
+      "path": "recommendation/generative_beauty/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T01:16:39.841Z",
+      "imported_sha256": "453244e47330f8f2cd6a1bc433dba095f925a9565480c23fa107d47225abb68f"
+    },
+    {
+      "path": "recommendation/generative_books/CURRENT_RUN.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T14:57:50.914Z",
+      "imported_sha256": "5b751a2aa1587224955f5914a7845f20ccb4cc9f73f40082fd2ff5cf7aa2068b"
+    },
+    {
+      "path": "recommendation/generative_books/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T01:25:22.041Z",
+      "imported_sha256": "6759a88b063fbb5435628f71742282faf75c15e476cbf151cad2c508f72def7a"
+    },
+    {
+      "path": "recommendation/generative_books/benchmark_capacity.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:28:58.594Z",
+      "imported_sha256": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd"
+    },
+    {
+      "path": "recommendation/generative_books/decoder_recovery/start_train.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T01:23:10.745Z",
+      "imported_sha256": "e3506a1f5fba5815695629d94983416777fce4280501014561a8d27ed87dcd91"
+    },
+    {
+      "path": "recommendation/generative_books/decoder_recovery/test_recovery.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T01:23:10.745Z",
+      "imported_sha256": "163406a96109fad290c824a478f56f054ac892d5fbd25104e7d509131ce46466"
+    },
+    {
+      "path": "recommendation/generative_books/decoder_recovery/train_recovery.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T01:23:10.745Z",
+      "imported_sha256": "fa85a76a036c78766562a7455689946711e15dcc7266590331d5f249b9d8867f"
+    },
+    {
+      "path": "recommendation/generative_books/download.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:24:28.145Z",
+      "imported_sha256": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462"
+    },
+    {
+      "path": "recommendation/generative_books/make_smoke_fixture.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:20:51.121Z",
+      "imported_sha256": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4"
+    },
+    {
+      "path": "recommendation/generative_books/models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T03:12:50.618Z",
+      "imported_sha256": "0c9d313e6c1f0af70e6e83162240884a1fc70130dd570160a807b9037a61e1fd"
+    },
+    {
+      "path": "recommendation/generative_books/prepare.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T03:12:50.618Z",
+      "imported_sha256": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7"
+    },
+    {
+      "path": "recommendation/generative_books/results/evaluate_completed.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T01:04:36.018Z",
+      "imported_sha256": "66295d147393a1bcc70a40d3d9aa0390247067b9328f61ff31a9a1e5dbdbd6c0"
+    },
+    {
+      "path": "recommendation/generative_books/run_pipeline.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:24:28.145Z",
+      "imported_sha256": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9"
+    },
+    {
+      "path": "recommendation/generative_books/start_20epochs.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T07:32:31.274Z",
+      "imported_sha256": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54"
+    },
+    {
+      "path": "recommendation/generative_books/start_train.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T02:20:51.121Z",
+      "imported_sha256": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7"
+    },
+    {
+      "path": "recommendation/generative_books/test_pipeline.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T03:12:50.618Z",
+      "imported_sha256": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/README.md",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:43:36.974Z",
+      "imported_sha256": "4d9efb90ebf2f4cc22985890a2eeb23729343b5977f04e51a980a2990639d83a"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/artifacts.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:40:07.588Z",
+      "imported_sha256": "692ae0e83cea1cee7b693d84aab9097ebbfcb7a1696ccf65368826ccec8e4a03"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/benchmark_capacity.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:41:20.944Z",
+      "imported_sha256": "11e9895d3ae561834b7b5aa69475c217b2ad43138314b8045789bfc97663dcea"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/models.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:40:07.588Z",
+      "imported_sha256": "c2f923be81a0789d923a8e2814085cba75167cdd118879e7af4e5941f06ab69b"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/start_train.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:40:07.588Z",
+      "imported_sha256": "dc4a5da08ac6931bded614b25f08a2c4b65e36f46313cd02a3db6764baf8fe30"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/test_scaling.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:40:07.588Z",
+      "imported_sha256": "b51aa2a6643f9c69f22b6b02024ec658210af56020bf2e6c9dd072771c72e025"
+    },
+    {
+      "path": "recommendation/generative_books/tiger_scaling/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-10T07:40:07.588Z",
+      "imported_sha256": "08155dd4a2f29a7807c14a38ef9d92d5f88a043ab6ec566c140246c9dca2f684"
+    },
+    {
+      "path": "recommendation/generative_books/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-09T03:12:50.618Z",
+      "imported_sha256": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba"
+    },
+    {
+      "path": "recommendation/model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:45:48.994Z",
+      "imported_sha256": "d445967ce1151cd013a14f1999c125f847287d758bd9b478017bcd5e53c2d460"
+    },
+    {
+      "path": "recommendation/prepare_data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:49:03.470Z",
+      "imported_sha256": "88f02e60126f9479186a4b01ea4ee57743e0cee29665648da231d04281872f6b"
+    },
+    {
+      "path": "recommendation/report_auc.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:07:50.189Z",
+      "imported_sha256": "224491122490abaae3796f292d7aac38e46dbbbcbdc2ccaeef0a8c2eed4ccf04"
+    },
+    {
+      "path": "recommendation/report_sequence.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:41:05.646Z",
+      "imported_sha256": "e966dbc45088db547a2828069b50555bf4b92b1ee1b7237da006b625204056d3"
+    },
+    {
+      "path": "recommendation/score.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:49:03.470Z",
+      "imported_sha256": "28b236dbbb83085b756980df3bb41dd4e5eda46bace268cb778aaabf855ff56d"
+    },
+    {
+      "path": "recommendation/score_auc.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:01:50.609Z",
+      "imported_sha256": "5999b160d368c9f1cfa150f2f69a1cf1a2c54a33d0dc8576edd215e786da2fb1"
+    },
+    {
+      "path": "recommendation/score_features.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:28:38.719Z",
+      "imported_sha256": "0645e7bc9c04f7aeb4cd143cfb31bbb8b74a2494480eb4912cf7b403878ec408"
+    },
+    {
+      "path": "recommendation/score_sequence.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:36:51.621Z",
+      "imported_sha256": "0e1b9ae4626f85e56ff05930411a663e3d6e89e93f482a8792aa6e2267b04564"
+    },
+    {
+      "path": "recommendation/sequence_data.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:29:27.325Z",
+      "imported_sha256": "afbb29cb99e314acb90980ced83c75ebd9a512b47e8956103bd1946f0e5c424d"
+    },
+    {
+      "path": "recommendation/sequence_model.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:31:35.382Z",
+      "imported_sha256": "5cd22ba4610c53001c1aa4fd40872ca8deaac1aa39d6d4b9401c21904fb79da8"
+    },
+    {
+      "path": "recommendation/start_auc.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:02:51.704Z",
+      "imported_sha256": "f820ea4b7e9ce2cb643be8dd99725551731b07d01a12abc2a0e05bcd9600e2f0"
+    },
+    {
+      "path": "recommendation/start_features.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:28:38.719Z",
+      "imported_sha256": "9c6f4e4c8f9700a4e2f5f294ac74a88757ea3e64467dd777f1a0c174dbb2747d"
+    },
+    {
+      "path": "recommendation/start_sequence.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:36:51.621Z",
+      "imported_sha256": "dec7851f2c1d612facc7505369a4c1830adb6418f80fed69c4fddb824fc41a1d"
+    },
+    {
+      "path": "recommendation/start_train.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:49:03.470Z",
+      "imported_sha256": "413345df4abf005a75add63218409330507520fbf1a21b11bc68444213f38945"
+    },
+    {
+      "path": "recommendation/test_auc.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:02:51.704Z",
+      "imported_sha256": "532e39a6060486ad5eeb8409bea336c8176bd171576c7c28b56a6afcbe5e1615"
+    },
+    {
+      "path": "recommendation/test_features.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:28:38.719Z",
+      "imported_sha256": "def20044b65a7ff874d0a7306ef0ea6a8646c67737ed271247419e4eaa4e9013"
+    },
+    {
+      "path": "recommendation/test_sequence.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:31:35.382Z",
+      "imported_sha256": "a99d5b1f455454fda3f460fce96951aa1f66f02c568006f2ffd148e0d313f7c9"
+    },
+    {
+      "path": "recommendation/train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T00:49:03.470Z",
+      "imported_sha256": "14cd67d571402cc31c09382eff328cf4da3f7f4269979540d497995871da40d0"
+    },
+    {
+      "path": "recommendation/train_auc.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:01:50.609Z",
+      "imported_sha256": "7d842263455d27f56e08478a54ee89121fecd6abab586c6c34ea3a37b84e4997"
+    },
+    {
+      "path": "recommendation/train_features.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T01:27:26.274Z",
+      "imported_sha256": "55c200259081038f2669a61e6329099eabf817c6600b9c41adfd73e775c7f9d3"
+    },
+    {
+      "path": "recommendation/train_sequence.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:37:09.494Z",
+      "imported_sha256": "511355c57deb8a300976a01dc8913664c38c400f55f69c4974f0b5d10d3bfd55"
+    },
+    {
+      "path": "recommendation/verify_auc.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:11:17.186Z",
+      "imported_sha256": "5e1ee09e80e2a49c83d8d3bb72d228ab30b82d2d2014ec9c759b66cdd8f287aa"
+    },
+    {
+      "path": "recommendation/verify_sequence.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-07T02:46:15.920Z",
+      "imported_sha256": "749d659f1750d4304ac1cb65343a838bdc73e23a26d07fb27c57bd843381201e"
+    },
+    {
+      "path": "report_vit.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T08:20:09.240Z",
+      "imported_sha256": "18c495b4bb8d509925b7362496e431eef430f31fc06e53acc78357897ecc913a"
+    },
+    {
+      "path": "requirements-inference.txt",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:11:46.505Z",
+      "imported_sha256": "b058a08213f3ec63676aae97a3add65d830123de639eab69dd870404d17022f6"
+    },
+    {
+      "path": "rl/qwen7b_grpo/config.json",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:41:31.818Z",
+      "imported_sha256": "020cab93bb43eba936963e5ea18480984f815a5fe0563a8bdc6fdf9ec7e970f9"
+    },
+    {
+      "path": "rl/qwen7b_grpo/download_model.py",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:44:05.355Z",
+      "imported_sha256": "283bdf8de73f56f1ab557cb75f657520d220d4b7be02551268d40439e258d4d8"
+    },
+    {
+      "path": "rl/qwen7b_grpo/experiment.py",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:44:57.267Z",
+      "imported_sha256": "ceeb6144042c1e8611a873e703782b27ae198fa1615748ab2d92385459b2e90b"
+    },
+    {
+      "path": "rl/qwen7b_grpo/preflight.py",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:55:10.095Z",
+      "imported_sha256": "2a51eb818668a09619b7a070af815fe244bc15c052b4372dea65a41ba3a65397"
+    },
+    {
+      "path": "rl/qwen7b_grpo/requirements.txt",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:41:31.818Z",
+      "imported_sha256": "7cf0fce3a397aafea9535358bd41e32ff17b8e50d8e131a1fcbf483c5e47d17d"
+    },
+    {
+      "path": "rl/qwen7b_grpo/rewards.py",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:41:31.818Z",
+      "imported_sha256": "e1fc3fdf8aaf9f4e49d37adea81fe2c55d0bd42582dd47d4a8508541dc996589"
+    },
+    {
+      "path": "rl/qwen7b_grpo/run.sh",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:44:57.267Z",
+      "imported_sha256": "28c56205a8c198bbd540b00b2e9903d3175633548c3fac3db40c06149a8ffa3a"
+    },
+    {
+      "path": "rl/qwen7b_grpo/test_rewards.py",
+      "source": "existing_local_file",
+      "last_recorded_edit": "2026-10-15T01:41:31.818Z",
+      "imported_sha256": "dcd4a79500249b4487bccd2474b7a1663c4aa84e4038565ff855b941af2b54f2"
+    },
+    {
+      "path": "run.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:10:00.227Z",
+      "imported_sha256": "4fe9d74a93f637a38d409784cf0376bbecbdcb18b7842b4eb3eebf319de1d05f"
+    },
+    {
+      "path": "run_vit.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T08:06:29.156Z",
+      "imported_sha256": "c3ca76b204e04604e6b34e45d6acfac4d3a439a5367323ba073a6a29629b366d"
+    },
+    {
+      "path": "run_vit_scaling.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:50:58.879Z",
+      "imported_sha256": "1c5bb67c45c1d0824744222032030bb64d281521671d62447859e2f3ddf5cca8"
+    },
+    {
+      "path": "start_inference.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T15:05:15.015Z",
+      "imported_sha256": "d67ef881389f7ad1cbae553744e38505e65bc378e5c872341cf6b244109171ff"
+    },
+    {
+      "path": "start_vit.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:45:10.489Z",
+      "imported_sha256": "38362b604c6291a6c7ca09f882b8bf1178f69f4045352c0c45197301a9d8205c"
+    },
+    {
+      "path": "start_vit_scaling.sh",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:50:58.879Z",
+      "imported_sha256": "d7d41d0023ef16d1a992362c2fde84d6afcdcd798710e8b3a7c51f539d0e661f"
+    },
+    {
+      "path": "train.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-09-30T07:34:23.839Z",
+      "imported_sha256": "46e3a813f95f43cbc9093d05986cfd1bf799d6ab48522d35432478ba671679f3"
+    },
+    {
+      "path": "train_vit.py",
+      "source": "historical_file_operations",
+      "last_recorded_edit": "2026-10-06T11:45:10.489Z",
+      "imported_sha256": "7d0744573e51fa96acf4cd6db8c8b38101c059b520c924227a46f6166936cd3a"
+    }
+  ]
+}

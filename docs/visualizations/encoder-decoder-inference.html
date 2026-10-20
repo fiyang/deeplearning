@@ -1,0 +1,97 @@
+<div id="ed-inference-compare">
+  <style>
+    #ed-inference-compare .ed-controls { margin: 12px 0 20px; }
+    #ed-inference-compare .ed-lane { margin: 0 0 26px; }
+    #ed-inference-compare .ed-flow { display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: center; gap: 6px; margin: 10px 0; }
+    #ed-inference-compare .ed-node { min-width: 0; text-align: center; padding: 12px 4px; }
+    #ed-inference-compare .ed-node-title { font-weight: 500; }
+    #ed-inference-compare .ed-arrow { text-align: center; color: var(--muted-foreground); }
+    #ed-inference-compare .ed-caption { margin-top: 5px; color: var(--muted-foreground); overflow-wrap: anywhere; }
+    #ed-inference-compare .ed-input { display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; margin-top: 7px; }
+    #ed-inference-compare .ed-token { padding: 3px 7px; background: color-mix(in srgb, var(--viz-series-1) 13%, transparent); color: var(--foreground); }
+    #ed-inference-compare .ed-memory { border-bottom: 1px solid var(--border); padding: 9px 0; color: var(--muted-foreground); }
+    #ed-inference-compare .ed-result { font-weight: 500; }
+    #ed-inference-compare .ed-feed { text-align: center; color: var(--muted-foreground); margin: 4px 0; }
+    @media (max-width: 480px) {
+      #ed-inference-compare .ed-flow { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      #ed-inference-compare .ed-arrow { transform: rotate(90deg); }
+      #ed-inference-compare .ed-node { padding: 8px 4px; }
+    }
+  </style>
+  <h3>同一份历史，两种推理路径</h3>
+  <div class="text-small text-muted">H = 用户 + 商品 A、B、C 的编码 · BOS = 起始标记 · 两边均按启用缓存示意</div>
+  <div class="viz-controls ed-controls" role="group" aria-label="选择生成步骤">
+    <button type="button" class="btn" data-step="0" aria-pressed="true">生成 c1</button>
+    <button type="button" class="btn" data-step="1" aria-pressed="false">生成 c2</button>
+    <button type="button" class="btn" data-step="2" aria-pressed="false">生成 c3</button>
+    <button type="button" class="btn" data-step="3" aria-pressed="false">生成 c4</button>
+  </div>
+  <section class="ed-lane" aria-label="Encoder–Decoder 推理">
+    <h3>Encoder–Decoder：历史单独处理</h3>
+    <div class="ed-flow">
+      <div class="ed-node"><div class="ed-node-title">历史 H</div><div class="ed-caption text-small">用户 + A + B + C</div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-node-title">Encoder</div><div class="ed-caption text-small" data-role="enc-work">首轮计算</div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-node-title">历史特征 M</div><div class="ed-caption text-small" data-role="memory-work">本轮产生</div></div>
+    </div>
+    <div class="ed-feed text-small">M ↓ 供 Decoder 的交叉注意力读取</div>
+    <div class="ed-flow">
+      <div class="ed-node"><div class="ed-node-title">Decoder 新增输入</div><div class="ed-input" data-role="enc-input"><span class="ed-token">BOS</span></div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-node-title">Decoder</div><div class="ed-caption text-small">因果自注意力 + 交叉注意力 + FFN</div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-caption text-small">预测输出</div><div class="ed-result" data-role="enc-result">c1</div></div>
+    </div>
+    <div class="ed-memory text-small" data-role="enc-cache">本轮前的目标序列缓存：空</div>
+  </section>
+  <section class="ed-lane" aria-label="标准 GPT 风格 Decoder-only 推理">
+    <h3>Decoder-only：历史作为序列前缀</h3>
+    <div class="ed-flow">
+      <div class="ed-node"><div class="ed-node-title">Decoder 新增输入</div><div class="ed-input" data-role="dec-input"><span class="ed-token">H</span><span class="ed-token">BOS</span></div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-node-title">Decoder</div><div class="ed-caption text-small">因果自注意力 + FFN</div></div>
+      <div class="ed-arrow" aria-hidden="true">→</div>
+      <div class="ed-node"><div class="ed-caption text-small">预测输出</div><div class="ed-result" data-role="dec-result">c1</div></div>
+    </div>
+    <div class="ed-memory text-small" data-role="dec-cache">本轮前的历史与目标序列缓存：空</div>
+  </section>
+  <div class="text-small text-muted" aria-live="polite" data-role="state">首轮：两边都处理完整历史；c1 尚未作为输入出现。</div>
+  <script>
+    (() => {
+      const root = document.getElementById('ed-inference-compare');
+      const el = name => root.querySelector('[data-role="' + name + '"]');
+      const buttons = Array.from(root.querySelectorAll('[data-step]'));
+      const tokenMarkup = words => words.map(w => '<span class="ed-token">' + w + '</span>').join('');
+      const validStep = value => Number.isInteger(value) && value >= 0 && value < 4 ? value : 0;
+      function render(value) {
+        const step = validStep(value);
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.step) === step)));
+        const newToken = step === 0 ? 'BOS' : 'c' + step;
+        const previous = ['BOS', ...Array.from({length: Math.max(0, step - 1)}, (_, i) => 'c' + (i + 1))];
+        el('enc-work').textContent = step === 0 ? '首轮计算' : '本轮无需重算';
+        el('memory-work').textContent = step === 0 ? '本轮产生' : '复用首轮结果';
+        el('enc-input').innerHTML = tokenMarkup([newToken]);
+        el('dec-input').innerHTML = tokenMarkup(step === 0 ? ['H', 'BOS'] : [newToken]);
+        el('enc-result').textContent = 'c' + (step + 1);
+        el('dec-result').textContent = 'c' + (step + 1);
+        el('enc-cache').textContent = '本轮前的目标序列缓存：' + (step === 0 ? '空' : previous.join(' · '));
+        el('dec-cache').textContent = '本轮前的历史与目标序列缓存：' + (step === 0 ? '空' : ['H', ...previous].join(' · '));
+        el('state').textContent = step === 0 ? '首轮：两边都处理完整历史；c1 尚未作为输入出现。' : '生成 c' + (step + 1) + '：两边都只新增输入 c' + step + '，通过历史特征或缓存读取已有信息。';
+      }
+      buttons.forEach(button => button.addEventListener('click', () => {
+        const step = Number(button.dataset.step);
+        render(step);
+        if (window.openai && window.openai.setWidgetState) {
+          window.openai.setWidgetState({modelContent: {generation_step: step + 1}, privateContent: {step}}).catch(() => {});
+        }
+      }));
+      const restore = state => render(state && state.privateContent ? state.privateContent.step : 0);
+      window.addEventListener('openai:set_globals', event => {
+        const globals = event.detail && event.detail.globals;
+        if (globals && Object.prototype.hasOwnProperty.call(globals, 'widgetState')) restore(globals.widgetState);
+      });
+      restore(window.openai && window.openai.widgetState);
+    })();
+  </script>
+</div>

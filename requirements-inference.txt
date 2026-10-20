@@ -1,0 +1,3 @@
+# Install in .venv-inference with --system-site-packages to reuse the server's PyTorch.
+fastapi==0.142.2
+uvicorn==0.54.0

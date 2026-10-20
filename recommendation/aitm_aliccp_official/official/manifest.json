@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/xidongbo/AITM",
+  "commit": "b695cfafdeaf82101aa7bd457d3bd82fd87f38e5",
+  "files": [
+    {
+      "file": "AITM.py",
+      "url": "https://raw.githubusercontent.com/xidongbo/AITM/b695cfafdeaf82101aa7bd457d3bd82fd87f38e5/AITM.py",
+      "sha256": "b3e788a64f78967e497142fc89c5ba61f217340931601daaf91ecaa2f81e1837"
+    },
+    {
+      "file": "AITM_standard.py",
+      "url": "https://raw.githubusercontent.com/xidongbo/AITM/b695cfafdeaf82101aa7bd457d3bd82fd87f38e5/AITM_standard.py",
+      "sha256": "b4e65e78aa1f54eaa5c16d4bb28cae0db000d90e35724031738c9f56dc8345d9"
+    },
+    {
+      "file": "process_public_dataset.py",
+      "url": "https://raw.githubusercontent.com/xidongbo/AITM/b695cfafdeaf82101aa7bd457d3bd82fd87f38e5/process_public_dataset.py",
+      "sha256": "615249f854ca452add131516ae81f217ff54bdb48d954376f129e90db757f084"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/xidongbo/AITM/b695cfafdeaf82101aa7bd457d3bd82fd87f38e5/README.md",
+      "sha256": "be8b470d1132b0ef01f0e06c8c9ee0e6515ca32bf96fc23fc1bf58c6ba5c526b"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/xidongbo/AITM/b695cfafdeaf82101aa7bd457d3bd82fd87f38e5/LICENSE",
+      "sha256": "2755c4367205e20f9d07a3720a4cc36a734affa2b70c218c3e33729ae440eab3"
+    }
+  ]
+}

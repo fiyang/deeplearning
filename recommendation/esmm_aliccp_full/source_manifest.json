@@ -1,0 +1,29 @@
+{
+  "dataset": "Ali-CCP original public release",
+  "mirror_page": "https://aistudio.baidu.com/datasetdetail/281066",
+  "maintainer_reference": "https://github.com/datawhalechina/torch-rechub/issues/70#issuecomment-2230552128",
+  "source_page": "https://tianchi.aliyun.com/dataset/408",
+  "license_label_on_mirror": "CC BY-NC-SA",
+  "dataset_id": 281066,
+  "verified_at": "2026-10-07",
+  "files": [
+    {
+      "name": "sample_test.tar.gz",
+      "file_id": 1821326,
+      "bytes": 5029299086,
+      "sha256": "c4842889986e0e3559626ffd572d1dec70d431d37ecebd17f06fe6247dda03da"
+    },
+    {
+      "name": "sample_train.tar.gz",
+      "file_id": 1821351,
+      "bytes": 4405491733,
+      "sha256": "e16e0f3077ccdfb4a0f908c8d02d38bcca3e77b1a11f884bc891393890fe04e4"
+    }
+  ],
+  "compressed_total_bytes": 9434790819,
+  "access_status": "Historical download required authenticated temporary URLs; obtain fresh authorized URLs on the remote machine. No credentials included.",
+  "expected_uncompressed_gb_from_paper": 38,
+  "repository": "torch-rechub/e8L8YpeZ",
+  "repository_revision": "47a5a7c80abde9163c99d1d9598138e023b771f8",
+  "download_guide": "https://ai.baidu.com/ai-doc/AISTUDIO/Xme7ykmz1"
+}
