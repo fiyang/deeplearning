@@ -4,19 +4,12 @@ from pathlib import Path
 import torch
 from datasets import Dataset
 from peft import LoraConfig
-from transformers import PreTrainedTokenizerFast, Qwen2Config, Qwen2ForCausalLM
-from tokenizers import Tokenizer, models, pre_tokenizers
+from transformers import AutoTokenizer, Qwen2Config, Qwen2ForCausalLM
 from trl import GRPOConfig, GRPOTrainer
 
 root = Path(__file__).resolve().parent
-vocab = {word: i for i, word in enumerate(
-    ['<pad>', '<eos>', '<unk>', '<bos>', 'user', 'assistant', ':', 'Compute',
-     '2', '+', '.', '4', 'The', 'answer', 'is', '<answer>', '</answer>'])}
-backend = Tokenizer(models.WordLevel(vocab, unk_token='<unk>'))
-backend.pre_tokenizer = pre_tokenizers.Whitespace()
-tokenizer = PreTrainedTokenizerFast(tokenizer_object=backend, pad_token='<pad>',
-    eos_token='<eos>', unk_token='<unk>', bos_token='<bos>', padding_side='left')
-tokenizer.chat_template = "{% for m in messages %}{{ m['role'] + ': ' + m['content'] + ' ' }}{% endfor %}{% if add_generation_prompt %}assistant: {% endif %}"
+tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/qwen7b-grpo-model', padding_side='left')
+tokenizer.pad_token = tokenizer.eos_token
 model = Qwen2ForCausalLM(Qwen2Config(
     vocab_size=len(tokenizer), hidden_size=64, intermediate_size=128,
     num_hidden_layers=2, num_attention_heads=4, num_key_value_heads=2,

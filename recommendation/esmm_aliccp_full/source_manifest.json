@@ -25,5 +25,6 @@
   "expected_uncompressed_gb_from_paper": 38,
   "repository": "torch-rechub/e8L8YpeZ",
   "repository_revision": "47a5a7c80abde9163c99d1d9598138e023b771f8",
-  "download_guide": "https://ai.baidu.com/ai-doc/AISTUDIO/Xme7ykmz1"
+  "download_guide": "https://ai.baidu.com/ai-doc/AISTUDIO/Xme7ykmz1",
+  "historical_download_verification": "Both original archives downloaded and verified against pinned Git LFS SHA256 on AutoDL. Used expiring browser-provided download links; temporary links removed after completion."
 }

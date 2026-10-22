@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-22",
+  "device": "cpu",
+  "source_hashes_verified": 182,
+  "python": "3.12.3",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "numpy": "2.3.2",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "scikit-learn": "1.9.1"
+  },
+  "results": [
+    {
+      "directory": ".",
+      "arguments": [
+        "check_models.py"
+      ],
+      "returncode": 0,
+      "tests": null,
+      "seconds": 44.009
+    },
+    {
+      "directory": "recommendation",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_auc.py",
+        "test_features.py",
+        "test_sequence.py"
+      ],
+      "returncode": 0,
+      "tests": 12,
+      "seconds": 13.496
+    },
+    {
+      "directory": "recommendation/esmm",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_esmm.py"
+      ],
+      "returncode": 0,
+      "tests": 9,
+      "seconds": 7.81
+    },
+    {
+      "directory": "recommendation/esmm_aliccp",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_aliccp.py"
+      ],
+      "returncode": 0,
+      "tests": 7,
+      "seconds": 7.591
+    },
+    {
+      "directory": "recommendation/esmm_aliccp_full",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_pipeline.py",
+        "test_mixed_embedding.py"
+      ],
+      "returncode": 0,
+      "tests": 6,
+      "seconds": 15.803
+    },
+    {
+      "directory": "recommendation/esmm_aliccp_attention",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_attention.py"
+      ],
+      "returncode": 0,
+      "tests": 4,
+      "seconds": 10.497
+    },
+    {
+      "directory": "recommendation/aitm_aliccp_official",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_author_port.py"
+      ],
+      "returncode": 0,
+      "tests": 6,
+      "seconds": 10.384
+    },
+    {
+      "directory": "recommendation/generative_beauty",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_pipeline.py"
+      ],
+      "returncode": 0,
+      "tests": 4,
+      "seconds": 21.713
+    },
+    {
+      "directory": "recommendation/generative_books",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_pipeline.py"
+      ],
+      "returncode": 0,
+      "tests": 6,
+      "seconds": 28.089
+    },
+    {
+      "directory": "recommendation/generative_books/decoder_recovery",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_recovery.py"
+      ],
+      "returncode": 0,
+      "tests": 4,
+      "seconds": 11.488
+    },
+    {
+      "directory": "recommendation/generative_books/tiger_scaling",
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_scaling.py"
+      ],
+      "returncode": 0,
+      "tests": 3,
+      "seconds": 28.735
+    }
+  ]
+}

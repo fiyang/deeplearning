@@ -1,0 +1,13 @@
+{
+  "baseline_parameters": 5043712,
+  "scaled_parameters": 14281344,
+  "parameter_ratio": 2.8315145670490307,
+  "training_batch_size": 512,
+  "eval_batch_size": 64,
+  "beam_size": 20,
+  "timed_steps": 20,
+  "examples_per_second": 4422.123581923068,
+  "peak_allocated_mib": 4979.25146484375,
+  "peak_reserved_mib": 5280.0,
+  "note": "Capacity and short-run throughput only, not recommendation quality or service latency."
+}

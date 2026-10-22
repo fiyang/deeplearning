@@ -1,0 +1,28 @@
+{
+  "raw_total_impressions": 85316975,
+  "valid_total_impressions": 85316519,
+  "excluded_inconsistent_labels": 456,
+  "valid_total_clicks": 3317703,
+  "valid_total_conversions": 17997,
+  "compressed_bytes": 9434790819,
+  "raw_csv_bytes": 41497739803,
+  "train": {
+    "rows": 38069915,
+    "clicks": 1479831,
+    "conversions": 7922
+  },
+  "validation": {
+    "rows": 4229990,
+    "clicks": 164425,
+    "conversions": 880
+  },
+  "test": {
+    "rows": 43016614,
+    "clicks": 1673447,
+    "conversions": 9195
+  },
+  "raw_train_rows": 42300135,
+  "raw_test_rows": 43016840,
+  "train_excluded": 230,
+  "test_excluded": 226
+}

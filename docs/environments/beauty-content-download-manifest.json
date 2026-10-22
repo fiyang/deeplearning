@@ -1,0 +1,82 @@
+{
+  "reviews_Beauty_5.json.gz": {
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Beauty_5.json.gz",
+    "bytes": 44819276,
+    "sha256": "e5925ec99023f1dc9c7d3dff7ef34cfeacd40d1b981b5525e1e4ba9c8abc18fe"
+  },
+  "meta_Beauty.json.gz": {
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Beauty.json.gz",
+    "bytes": 99156148,
+    "sha256": "c7977dc0e0ead14ac7df8c1c6de74da00e4bebfad87a0f0c5763d4c5bc9b53a0"
+  },
+  "model/1_Pooling/config.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/1_Pooling/config.json",
+    "bytes": 190,
+    "sha256": "a37f83ada23e7887be6b88f4998927dbeac0038af301553c7cd5461413bf1a56"
+  },
+  "model/2_Dense/config.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/2_Dense/config.json",
+    "bytes": 115,
+    "sha256": "9c6560e6ff2744a7ec4dd710786d57660aeb3ddf936332e404269bd5bd24e952"
+  },
+  "model/config.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/config.json",
+    "bytes": 1386,
+    "sha256": "774e205af652f53b16b62a7a73debcfd96018b392cc08a0c12f864b42d2aa944"
+  },
+  "model/config_sentence_transformers.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/config_sentence_transformers.json",
+    "bytes": 122,
+    "sha256": "f631e4bd49910419948c5e9134ab07e0d63b22b8cebbe6875f99a0712bcadd4d"
+  },
+  "model/configuration.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/configuration.json",
+    "bytes": 77,
+    "sha256": "007c616ed9187f4f3d6096ed2d55cece33c3f48866dbd7bc6afefcb9645a37c1"
+  },
+  "model/2_Dense/model.safetensors": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/2_Dense/model.safetensors",
+    "bytes": 2359416,
+    "sha256": "0a6d7cd055587034fc62b37fb66ec1b525b5ff4ce6964c3aef9c4d3388fa7aaf"
+  },
+  "model/model.safetensors": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/model.safetensors",
+    "bytes": 219268776,
+    "sha256": "bb38b5739d7360837bd928e9483f975594cb849ccc22c03e089daf3f336e3adc"
+  },
+  "model/modules.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/modules.json",
+    "bytes": 461,
+    "sha256": "41251094dfd3e7ff81a85ba97b3f4788df47e4039f1bc5037575b43c028beb40"
+  },
+  "model/README.md": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/README.md",
+    "bytes": 1777,
+    "sha256": "106e0e05a6166ec36978e53cf2f747d2abac590f1d06db726284ced2a98a3271"
+  },
+  "model/sentence_bert_config.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/sentence_bert_config.json",
+    "bytes": 53,
+    "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+  },
+  "model/special_tokens_map.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/special_tokens_map.json",
+    "bytes": 1786,
+    "sha256": "4720c0fddbe4c5991334f85ad7073d9bd0a294a8ba4641a2f8dab614ca825949"
+  },
+  "model/spiece.model": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/spiece.model",
+    "bytes": 791656,
+    "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+  },
+  "model/tokenizer.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/tokenizer.json",
+    "bytes": 1387554,
+    "sha256": "3dd4249b57e28dda22219397c091a4a11655c537e0d8a9b5e2efcf43f39c8773"
+  },
+  "model/tokenizer_config.json": {
+    "url": "https://modelscope.cn/models/sentence-transformers/sentence-t5-base/resolve/master/tokenizer_config.json",
+    "bytes": 1923,
+    "sha256": "6973652f30c2c8359a70d8fe41f9af4f13b3225d9520dbecfe0b7f0c69f997f3"
+  }
+}

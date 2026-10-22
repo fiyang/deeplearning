@@ -1,0 +1,1654 @@
+{
+  "date": "2026-10-22",
+  "remote_verified": true,
+  "previous_repository_commit": "b8972d5fd45548f0c4acbc5539596da996b450d8",
+  "scope": "Code, configuration, documentation and small historical metadata only; no datasets, weights, training logs, credentials, or runtime environments.",
+  "source_file_count": 168,
+  "source_bytes": 914774,
+  "resolution_counts": {
+    "preserved_archive_safety_and_data_preparation": 2,
+    "merged_documentation_with_historical_context": 21,
+    "already_identical": 133,
+    "formatting_only": 7,
+    "imported_remote_version": 4,
+    "merged_historical_metadata_without_stale_disk_status": 1
+  },
+  "sources": [
+    {
+      "ssh_alias": "deeplearning-dl-1",
+      "source_root": "/root/autodl-tmp/deeplearning-lab",
+      "source_files": 160,
+      "source_bytes": 892526,
+      "excluded_directory_names": [
+        "__pycache__",
+        "backups",
+        "checkpoints",
+        "data",
+        "env",
+        "models",
+        "node_modules",
+        "runs",
+        "smoke_fixture",
+        "venv",
+        "weights"
+      ],
+      "skipped": [
+        {
+          "path": "recommendation/esmm/current_run.txt",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "recommendation/esmm_aliccp/current_run.txt",
+          "reason": "runtime_or_sensitive_name"
+        }
+      ],
+      "files": [
+        {
+          "remote_path": ".gitignore",
+          "repository_path": ".gitignore",
+          "bytes": 32,
+          "remote_sha256": "8d23dc2f1c7a73772b29b9ae34bc86045a19dffcf686d2d68e0d1e6d0daac34a",
+          "repository_sha256": "d3fcd1d68c25bf147fc5e1651aa0469a342661d8a36e7115a846e10eda518cf9",
+          "previous_repository_sha256": "bc7bace6b68d73f2f6b1936d84013500b51cc629988760aa1038ec91055a8d6c",
+          "resolution": "preserved_archive_safety_and_data_preparation"
+        },
+        {
+          "remote_path": "COMPARISON.md",
+          "repository_path": "COMPARISON.md",
+          "bytes": 5244,
+          "remote_sha256": "bda83349715d1e10047ed5d732a5fff060fa92ff0286a246ceda5e4db8e720ca",
+          "repository_sha256": "d057b3858be458902e48df262e41a37c23e1b7000f0a762163e6cdb7ac715adf",
+          "previous_repository_sha256": "362f4115a81d1ca179853246ae7830d92e48fd1124ca46b0d07bb2ee552af1a2",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "INFERENCE.md",
+          "repository_path": "INFERENCE.md",
+          "bytes": 9484,
+          "remote_sha256": "72276660e369f83121d5f217698d3c34d98cdeb24312bdebfe6c8e56cd8699c4",
+          "repository_sha256": "1ad81d1566cca37ee11c894b2badbad509b07fbedc68961d70c9c474670e1475",
+          "previous_repository_sha256": "0bd32ddffa70ef975e11315b7a0a010c0b550da2b893eec6a3e414dca86b2506",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "MODELS.md",
+          "repository_path": "MODELS.md",
+          "bytes": 5191,
+          "remote_sha256": "c588d3827a06e60ab629b8b8a87e0b17b866977b43737ea051839074b0f9b4a6",
+          "repository_sha256": "065f9fd3c883b4a7a04db34be09f0937428658577b7827092f2512609baa212e",
+          "previous_repository_sha256": "94a12509e177d881f70a23280d84acbab3c79be9136eddcb5e607a9380e08927",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "README.md",
+          "repository_path": "CIFAR10.md",
+          "bytes": 5564,
+          "remote_sha256": "2b216e62079ebcbcef6400fc9819aa2b76fd994f37de108853d464301596ba2d",
+          "repository_sha256": "c5d06104db7eaf4ba4383db14173e47c2db69ce50e4ba737e32db010736fe4f2",
+          "previous_repository_sha256": "626eff0f55dbfdcce957e1a523cb2755743ff3a06407f762fecf1c167ba4226f",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "RESULTS.md",
+          "repository_path": "RESULTS.md",
+          "bytes": 3955,
+          "remote_sha256": "fb239bf12c06b60daaeb92f3f18fc1c0c023d18673bc8bdb9ba44530b517bb5f",
+          "repository_sha256": "36ab6128b9bf30117daa1f2ff2d34685825435609cb69bcba6532201e457a1d8",
+          "previous_repository_sha256": "1621eb85b9b0d1d61bf3d3cb5ace3ca44ee23f2060dd7e7ff5e68716afa01683",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "VIT_SCALING.md",
+          "repository_path": "VIT_SCALING.md",
+          "bytes": 6864,
+          "remote_sha256": "5ef3515de2987d1c6bf5142fa786f965d9664c24c08a0ba10ce33b5241d6a757",
+          "repository_sha256": "ab1b2687eae808529c25f9b90df7db49bc3f14761aaa66d2af9dca564148510e",
+          "previous_repository_sha256": "eb379ba30e628cd405a09168bb1bb7723b032d18daa3d069b6674c84228b8722",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "VIT_TUNING.md",
+          "repository_path": "VIT_TUNING.md",
+          "bytes": 7105,
+          "remote_sha256": "7fb3b9fd7a71c79df56905a9830c3459a316aeb05fdafcf055cb6ee53109bf5a",
+          "repository_sha256": "3707135570f97010675efa6aeb22ba32215c4bcdd12097eae769495d53416818",
+          "previous_repository_sha256": "6880114d9aaa568b6cd64cd10aaff62b56d59d724899fa6fe14ee362c0679cc3",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "benchmark_inference.py",
+          "repository_path": "benchmark_inference.py",
+          "bytes": 4968,
+          "remote_sha256": "c612590186fe6dc03efbd78074648afdddfbf4f71378f689165d1d37ebf590b7",
+          "repository_sha256": "c612590186fe6dc03efbd78074648afdddfbf4f71378f689165d1d37ebf590b7",
+          "previous_repository_sha256": "c612590186fe6dc03efbd78074648afdddfbf4f71378f689165d1d37ebf590b7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "check_inference_accuracy.py",
+          "repository_path": "check_inference_accuracy.py",
+          "bytes": 8509,
+          "remote_sha256": "46ce9f365451e8b13a939ad79e8c281008c6222e1396bc26e0852d2cc6a601e7",
+          "repository_sha256": "46ce9f365451e8b13a939ad79e8c281008c6222e1396bc26e0852d2cc6a601e7",
+          "previous_repository_sha256": "46ce9f365451e8b13a939ad79e8c281008c6222e1396bc26e0852d2cc6a601e7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "check_inference_service.py",
+          "repository_path": "check_inference_service.py",
+          "bytes": 3765,
+          "remote_sha256": "2dabbef56a4e9307afc4cbec485eb563679c3a44492809f2d2662bc057ece1d2",
+          "repository_sha256": "2dabbef56a4e9307afc4cbec485eb563679c3a44492809f2d2662bc057ece1d2",
+          "previous_repository_sha256": "2dabbef56a4e9307afc4cbec485eb563679c3a44492809f2d2662bc057ece1d2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "check_models.py",
+          "repository_path": "check_models.py",
+          "bytes": 2768,
+          "remote_sha256": "ab378125ea613b9e2bbd537e6efcc38d5aadfe5d7735a89877e4ddebb0fd6401",
+          "repository_sha256": "ab378125ea613b9e2bbd537e6efcc38d5aadfe5d7735a89877e4ddebb0fd6401",
+          "previous_repository_sha256": "ab378125ea613b9e2bbd537e6efcc38d5aadfe5d7735a89877e4ddebb0fd6401",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "check_vit_compatibility.py",
+          "repository_path": "check_vit_compatibility.py",
+          "bytes": 1350,
+          "remote_sha256": "190b6f1125168448234102eb08007ca337e6a42cfb5a304391db3b005441e0d5",
+          "repository_sha256": "190b6f1125168448234102eb08007ca337e6a42cfb5a304391db3b005441e0d5",
+          "previous_repository_sha256": "190b6f1125168448234102eb08007ca337e6a42cfb5a304391db3b005441e0d5",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "check_vit_training.py",
+          "repository_path": "check_vit_training.py",
+          "bytes": 3262,
+          "remote_sha256": "77bad6dd00366ada6bb971cfa067afa306d6581ef8c1532bc6ea94d3968ea3b2",
+          "repository_sha256": "77bad6dd00366ada6bb971cfa067afa306d6581ef8c1532bc6ea94d3968ea3b2",
+          "previous_repository_sha256": "77bad6dd00366ada6bb971cfa067afa306d6581ef8c1532bc6ea94d3968ea3b2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "compare_models.py",
+          "repository_path": "compare_models.py",
+          "bytes": 11762,
+          "remote_sha256": "ec6a38fc6cc621f87ed5b18f65c8d05bf4d6b27f7547eaf70ac10fc46ab50d7e",
+          "repository_sha256": "ec6a38fc6cc621f87ed5b18f65c8d05bf4d6b27f7547eaf70ac10fc46ab50d7e",
+          "previous_repository_sha256": "ec6a38fc6cc621f87ed5b18f65c8d05bf4d6b27f7547eaf70ac10fc46ab50d7e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "infer_model.py",
+          "repository_path": "infer_model.py",
+          "bytes": 1932,
+          "remote_sha256": "daebe50a8ec1b42b856cc7b9c01c270e2d6f160f87dd51cd0fcdb47d5aa1fe9b",
+          "repository_sha256": "514b154f8b551ed9182682eb0ec3b55f702163349c41e601481c561a39b31269",
+          "previous_repository_sha256": "514b154f8b551ed9182682eb0ec3b55f702163349c41e601481c561a39b31269",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "inference_service.py",
+          "repository_path": "inference_service.py",
+          "bytes": 7866,
+          "remote_sha256": "7b32d6e10f04fc43daa1e065c445033fba91d0dd42f6b0a64d269e51717300f7",
+          "repository_sha256": "7b32d6e10f04fc43daa1e065c445033fba91d0dd42f6b0a64d269e51717300f7",
+          "previous_repository_sha256": "7b32d6e10f04fc43daa1e065c445033fba91d0dd42f6b0a64d269e51717300f7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "models.py",
+          "repository_path": "models.py",
+          "bytes": 5166,
+          "remote_sha256": "dc063490071df16d201c3f2ff29d4b8775398d803200be3773b424cd5ceb8d84",
+          "repository_sha256": "dc063490071df16d201c3f2ff29d4b8775398d803200be3773b424cd5ceb8d84",
+          "previous_repository_sha256": "dc063490071df16d201c3f2ff29d4b8775398d803200be3773b424cd5ceb8d84",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "predict.py",
+          "repository_path": "predict.py",
+          "bytes": 1373,
+          "remote_sha256": "a5d81fe7b76a88d4d574e39485ff6410064821e2f7cb562d5362c6e40b8a863f",
+          "repository_sha256": "713923651684c2f42a288a46661c60a00ffbb3274b5f26312c550d317ef1c341",
+          "previous_repository_sha256": "713923651684c2f42a288a46661c60a00ffbb3274b5f26312c550d317ef1c341",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "prepare_data.py",
+          "repository_path": "prepare_data.py",
+          "bytes": 1981,
+          "remote_sha256": "d23cb725699cea4dfab5f20d4b27bdc3e2e117c10a2f7828cb7b9a3ffde6d4a2",
+          "repository_sha256": "d9c6cf76b7fa3cf09536a389b96fbf9f289d51ccc4de6866a700fbde73063eb5",
+          "previous_repository_sha256": "d9c6cf76b7fa3cf09536a389b96fbf9f289d51ccc4de6866a700fbde73063eb5",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "report_vit.py",
+          "repository_path": "report_vit.py",
+          "bytes": 3543,
+          "remote_sha256": "18c495b4bb8d509925b7362496e431eef430f31fc06e53acc78357897ecc913a",
+          "repository_sha256": "18c495b4bb8d509925b7362496e431eef430f31fc06e53acc78357897ecc913a",
+          "previous_repository_sha256": "18c495b4bb8d509925b7362496e431eef430f31fc06e53acc78357897ecc913a",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "requirements-inference.txt",
+          "repository_path": "requirements-inference.txt",
+          "bytes": 121,
+          "remote_sha256": "b058a08213f3ec63676aae97a3add65d830123de639eab69dd870404d17022f6",
+          "repository_sha256": "b058a08213f3ec63676aae97a3add65d830123de639eab69dd870404d17022f6",
+          "previous_repository_sha256": "b058a08213f3ec63676aae97a3add65d830123de639eab69dd870404d17022f6",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "run.sh",
+          "repository_path": "run.sh",
+          "bytes": 481,
+          "remote_sha256": "4fe9d74a93f637a38d409784cf0376bbecbdcb18b7842b4eb3eebf319de1d05f",
+          "repository_sha256": "4d1a131d05cebcc361d7df6eef9e253ebe3c26e6d397e6399b9a8e6e3f51754d",
+          "previous_repository_sha256": "4d1a131d05cebcc361d7df6eef9e253ebe3c26e6d397e6399b9a8e6e3f51754d",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "run_vit.sh",
+          "repository_path": "run_vit.sh",
+          "bytes": 312,
+          "remote_sha256": "c3ca76b204e04604e6b34e45d6acfac4d3a439a5367323ba073a6a29629b366d",
+          "repository_sha256": "c3ca76b204e04604e6b34e45d6acfac4d3a439a5367323ba073a6a29629b366d",
+          "previous_repository_sha256": "c3ca76b204e04604e6b34e45d6acfac4d3a439a5367323ba073a6a29629b366d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "run_vit_scaling.py",
+          "repository_path": "run_vit_scaling.py",
+          "bytes": 6975,
+          "remote_sha256": "1c5bb67c45c1d0824744222032030bb64d281521671d62447859e2f3ddf5cca8",
+          "repository_sha256": "1c5bb67c45c1d0824744222032030bb64d281521671d62447859e2f3ddf5cca8",
+          "previous_repository_sha256": "1c5bb67c45c1d0824744222032030bb64d281521671d62447859e2f3ddf5cca8",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "start_inference.sh",
+          "repository_path": "start_inference.sh",
+          "bytes": 1300,
+          "remote_sha256": "d67ef881389f7ad1cbae553744e38505e65bc378e5c872341cf6b244109171ff",
+          "repository_sha256": "d67ef881389f7ad1cbae553744e38505e65bc378e5c872341cf6b244109171ff",
+          "previous_repository_sha256": "d67ef881389f7ad1cbae553744e38505e65bc378e5c872341cf6b244109171ff",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "start_vit.sh",
+          "repository_path": "start_vit.sh",
+          "bytes": 4112,
+          "remote_sha256": "38362b604c6291a6c7ca09f882b8bf1178f69f4045352c0c45197301a9d8205c",
+          "repository_sha256": "38362b604c6291a6c7ca09f882b8bf1178f69f4045352c0c45197301a9d8205c",
+          "previous_repository_sha256": "38362b604c6291a6c7ca09f882b8bf1178f69f4045352c0c45197301a9d8205c",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "start_vit_scaling.sh",
+          "repository_path": "start_vit_scaling.sh",
+          "bytes": 1395,
+          "remote_sha256": "d7d41d0023ef16d1a992362c2fde84d6afcdcd798710e8b3a7c51f539d0e661f",
+          "repository_sha256": "d7d41d0023ef16d1a992362c2fde84d6afcdcd798710e8b3a7c51f539d0e661f",
+          "previous_repository_sha256": "d7d41d0023ef16d1a992362c2fde84d6afcdcd798710e8b3a7c51f539d0e661f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "train.py",
+          "repository_path": "train.py",
+          "bytes": 13562,
+          "remote_sha256": "77878995c777c7940503430e48bec0b9d502b160f969152f645c2dc4ded9d43f",
+          "repository_sha256": "77878995c777c7940503430e48bec0b9d502b160f969152f645c2dc4ded9d43f",
+          "previous_repository_sha256": "77878995c777c7940503430e48bec0b9d502b160f969152f645c2dc4ded9d43f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "train_vit.py",
+          "repository_path": "train_vit.py",
+          "bytes": 15440,
+          "remote_sha256": "7d0744573e51fa96acf4cd6db8c8b38101c059b520c924227a46f6166936cd3a",
+          "repository_sha256": "7d0744573e51fa96acf4cd6db8c8b38101c059b520c924227a46f6166936cd3a",
+          "previous_repository_sha256": "7d0744573e51fa96acf4cd6db8c8b38101c059b520c924227a46f6166936cd3a",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/AUC_EXPERIMENT.md",
+          "repository_path": "recommendation/AUC_EXPERIMENT.md",
+          "bytes": 8883,
+          "remote_sha256": "083bdfabce278dee285e4f884e51d63012c7bbaa0b8ab197c246f7a194a51fdf",
+          "repository_sha256": "eb9817e04ff40ef9a86533cee5a563546c569505e4ad1762e16b4d91d34d4cc7",
+          "previous_repository_sha256": "9c0c851ab3b7025257d4a783e2b16227807faac8c539056eb0c2f188c78ebe3d",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/FEATURES.md",
+          "repository_path": "recommendation/FEATURES.md",
+          "bytes": 7951,
+          "remote_sha256": "2b02a029e524b0025fd52491cae14dba8f5ddbad05c5a4ec5e4f00e7bd3aceda",
+          "repository_sha256": "b3b8fb7a277283dc5c23588937ebd7a1a889eb6350949ad63480f429c9fb6d62",
+          "previous_repository_sha256": "754ab68895bf5c28db22d4733c93726137079cf1eaf6c1cc824b1bfab5f35f14",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/README.md",
+          "repository_path": "recommendation/README.md",
+          "bytes": 7891,
+          "remote_sha256": "7e70d911aa63c1967d28972e2ab05f858699533758a587f2700d203514894a67",
+          "repository_sha256": "e70577076fa4919516d7854826812157cfdf2ae1fbc8b4a51b73d0e4a2e3f33e",
+          "previous_repository_sha256": "886a91138c2fd6162b88527768f7fd8de977f4ff97be034cbb2e1813c853e7c2",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/SEQUENCE_EXPERIMENT.md",
+          "repository_path": "recommendation/SEQUENCE_EXPERIMENT.md",
+          "bytes": 9301,
+          "remote_sha256": "1a0805abe44b2e3cfddc0b6f0d15399614b0fbc22f02e39766fe9cba5161207c",
+          "repository_sha256": "6e5a5916f6105f5491877a01d6caf28fe267acdc0d6398455b43498009066efc",
+          "previous_repository_sha256": "5bc6752b6b674f1e82335b8468bc628ba18a5f90efbdccca4e73c990190fde04",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/auc_data.py",
+          "repository_path": "recommendation/auc_data.py",
+          "bytes": 4711,
+          "remote_sha256": "bb36a732b39ecb82286c0038d350d0262a6957898b612307120e0dd8e2838240",
+          "repository_sha256": "bb36a732b39ecb82286c0038d350d0262a6957898b612307120e0dd8e2838240",
+          "previous_repository_sha256": "bb36a732b39ecb82286c0038d350d0262a6957898b612307120e0dd8e2838240",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/auc_models.py",
+          "repository_path": "recommendation/auc_models.py",
+          "bytes": 6428,
+          "remote_sha256": "ede714ddfe2c0226d4ed621cd1c1e363d67a395e85b8c5db89de5be7cf473e51",
+          "repository_sha256": "ede714ddfe2c0226d4ed621cd1c1e363d67a395e85b8c5db89de5be7cf473e51",
+          "previous_repository_sha256": "ede714ddfe2c0226d4ed621cd1c1e363d67a395e85b8c5db89de5be7cf473e51",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/feature_model.py",
+          "repository_path": "recommendation/feature_model.py",
+          "bytes": 3100,
+          "remote_sha256": "3b0f3c64c3984f81fad28c5b44b6d4e59b8c434ee5416771791132f90befd927",
+          "repository_sha256": "3b0f3c64c3984f81fad28c5b44b6d4e59b8c434ee5416771791132f90befd927",
+          "previous_repository_sha256": "3b0f3c64c3984f81fad28c5b44b6d4e59b8c434ee5416771791132f90befd927",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/features.py",
+          "repository_path": "recommendation/features.py",
+          "bytes": 5983,
+          "remote_sha256": "15445de66424f0b7e263b426e233e710383bf05145f750b3d6b1dc2be811af60",
+          "repository_sha256": "15445de66424f0b7e263b426e233e710383bf05145f750b3d6b1dc2be811af60",
+          "previous_repository_sha256": "15445de66424f0b7e263b426e233e710383bf05145f750b3d6b1dc2be811af60",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/model.py",
+          "repository_path": "recommendation/model.py",
+          "bytes": 1111,
+          "remote_sha256": "d445967ce1151cd013a14f1999c125f847287d758bd9b478017bcd5e53c2d460",
+          "repository_sha256": "d445967ce1151cd013a14f1999c125f847287d758bd9b478017bcd5e53c2d460",
+          "previous_repository_sha256": "d445967ce1151cd013a14f1999c125f847287d758bd9b478017bcd5e53c2d460",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/prepare_data.py",
+          "repository_path": "recommendation/prepare_data.py",
+          "bytes": 1241,
+          "remote_sha256": "88f02e60126f9479186a4b01ea4ee57743e0cee29665648da231d04281872f6b",
+          "repository_sha256": "88f02e60126f9479186a4b01ea4ee57743e0cee29665648da231d04281872f6b",
+          "previous_repository_sha256": "88f02e60126f9479186a4b01ea4ee57743e0cee29665648da231d04281872f6b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/report_auc.py",
+          "repository_path": "recommendation/report_auc.py",
+          "bytes": 3980,
+          "remote_sha256": "224491122490abaae3796f292d7aac38e46dbbbcbdc2ccaeef0a8c2eed4ccf04",
+          "repository_sha256": "224491122490abaae3796f292d7aac38e46dbbbcbdc2ccaeef0a8c2eed4ccf04",
+          "previous_repository_sha256": "224491122490abaae3796f292d7aac38e46dbbbcbdc2ccaeef0a8c2eed4ccf04",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/report_sequence.py",
+          "repository_path": "recommendation/report_sequence.py",
+          "bytes": 2563,
+          "remote_sha256": "e966dbc45088db547a2828069b50555bf4b92b1ee1b7237da006b625204056d3",
+          "repository_sha256": "e966dbc45088db547a2828069b50555bf4b92b1ee1b7237da006b625204056d3",
+          "previous_repository_sha256": "e966dbc45088db547a2828069b50555bf4b92b1ee1b7237da006b625204056d3",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/score.py",
+          "repository_path": "recommendation/score.py",
+          "bytes": 2842,
+          "remote_sha256": "28b236dbbb83085b756980df3bb41dd4e5eda46bace268cb778aaabf855ff56d",
+          "repository_sha256": "28b236dbbb83085b756980df3bb41dd4e5eda46bace268cb778aaabf855ff56d",
+          "previous_repository_sha256": "28b236dbbb83085b756980df3bb41dd4e5eda46bace268cb778aaabf855ff56d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/score_auc.py",
+          "repository_path": "recommendation/score_auc.py",
+          "bytes": 2519,
+          "remote_sha256": "5999b160d368c9f1cfa150f2f69a1cf1a2c54a33d0dc8576edd215e786da2fb1",
+          "repository_sha256": "5999b160d368c9f1cfa150f2f69a1cf1a2c54a33d0dc8576edd215e786da2fb1",
+          "previous_repository_sha256": "5999b160d368c9f1cfa150f2f69a1cf1a2c54a33d0dc8576edd215e786da2fb1",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/score_features.py",
+          "repository_path": "recommendation/score_features.py",
+          "bytes": 2717,
+          "remote_sha256": "0645e7bc9c04f7aeb4cd143cfb31bbb8b74a2494480eb4912cf7b403878ec408",
+          "repository_sha256": "0645e7bc9c04f7aeb4cd143cfb31bbb8b74a2494480eb4912cf7b403878ec408",
+          "previous_repository_sha256": "0645e7bc9c04f7aeb4cd143cfb31bbb8b74a2494480eb4912cf7b403878ec408",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/score_sequence.py",
+          "repository_path": "recommendation/score_sequence.py",
+          "bytes": 2909,
+          "remote_sha256": "0e1b9ae4626f85e56ff05930411a663e3d6e89e93f482a8792aa6e2267b04564",
+          "repository_sha256": "0e1b9ae4626f85e56ff05930411a663e3d6e89e93f482a8792aa6e2267b04564",
+          "previous_repository_sha256": "0e1b9ae4626f85e56ff05930411a663e3d6e89e93f482a8792aa6e2267b04564",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/sequence_data.py",
+          "repository_path": "recommendation/sequence_data.py",
+          "bytes": 4919,
+          "remote_sha256": "afbb29cb99e314acb90980ced83c75ebd9a512b47e8956103bd1946f0e5c424d",
+          "repository_sha256": "afbb29cb99e314acb90980ced83c75ebd9a512b47e8956103bd1946f0e5c424d",
+          "previous_repository_sha256": "afbb29cb99e314acb90980ced83c75ebd9a512b47e8956103bd1946f0e5c424d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/sequence_model.py",
+          "repository_path": "recommendation/sequence_model.py",
+          "bytes": 6287,
+          "remote_sha256": "5cd22ba4610c53001c1aa4fd40872ca8deaac1aa39d6d4b9401c21904fb79da8",
+          "repository_sha256": "5cd22ba4610c53001c1aa4fd40872ca8deaac1aa39d6d4b9401c21904fb79da8",
+          "previous_repository_sha256": "5cd22ba4610c53001c1aa4fd40872ca8deaac1aa39d6d4b9401c21904fb79da8",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/start_auc.sh",
+          "repository_path": "recommendation/start_auc.sh",
+          "bytes": 537,
+          "remote_sha256": "f820ea4b7e9ce2cb643be8dd99725551731b07d01a12abc2a0e05bcd9600e2f0",
+          "repository_sha256": "f820ea4b7e9ce2cb643be8dd99725551731b07d01a12abc2a0e05bcd9600e2f0",
+          "previous_repository_sha256": "f820ea4b7e9ce2cb643be8dd99725551731b07d01a12abc2a0e05bcd9600e2f0",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/start_features.sh",
+          "repository_path": "recommendation/start_features.sh",
+          "bytes": 529,
+          "remote_sha256": "9c6f4e4c8f9700a4e2f5f294ac74a88757ea3e64467dd777f1a0c174dbb2747d",
+          "repository_sha256": "9c6f4e4c8f9700a4e2f5f294ac74a88757ea3e64467dd777f1a0c174dbb2747d",
+          "previous_repository_sha256": "9c6f4e4c8f9700a4e2f5f294ac74a88757ea3e64467dd777f1a0c174dbb2747d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/start_sequence.sh",
+          "repository_path": "recommendation/start_sequence.sh",
+          "bytes": 561,
+          "remote_sha256": "dec7851f2c1d612facc7505369a4c1830adb6418f80fed69c4fddb824fc41a1d",
+          "repository_sha256": "dec7851f2c1d612facc7505369a4c1830adb6418f80fed69c4fddb824fc41a1d",
+          "previous_repository_sha256": "dec7851f2c1d612facc7505369a4c1830adb6418f80fed69c4fddb824fc41a1d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/start_train.sh",
+          "repository_path": "recommendation/start_train.sh",
+          "bytes": 523,
+          "remote_sha256": "413345df4abf005a75add63218409330507520fbf1a21b11bc68444213f38945",
+          "repository_sha256": "413345df4abf005a75add63218409330507520fbf1a21b11bc68444213f38945",
+          "previous_repository_sha256": "413345df4abf005a75add63218409330507520fbf1a21b11bc68444213f38945",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/test_auc.py",
+          "repository_path": "recommendation/test_auc.py",
+          "bytes": 4756,
+          "remote_sha256": "532e39a6060486ad5eeb8409bea336c8176bd171576c7c28b56a6afcbe5e1615",
+          "repository_sha256": "532e39a6060486ad5eeb8409bea336c8176bd171576c7c28b56a6afcbe5e1615",
+          "previous_repository_sha256": "532e39a6060486ad5eeb8409bea336c8176bd171576c7c28b56a6afcbe5e1615",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/test_features.py",
+          "repository_path": "recommendation/test_features.py",
+          "bytes": 4217,
+          "remote_sha256": "def20044b65a7ff874d0a7306ef0ea6a8646c67737ed271247419e4eaa4e9013",
+          "repository_sha256": "def20044b65a7ff874d0a7306ef0ea6a8646c67737ed271247419e4eaa4e9013",
+          "previous_repository_sha256": "def20044b65a7ff874d0a7306ef0ea6a8646c67737ed271247419e4eaa4e9013",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/test_sequence.py",
+          "repository_path": "recommendation/test_sequence.py",
+          "bytes": 6104,
+          "remote_sha256": "a99d5b1f455454fda3f460fce96951aa1f66f02c568006f2ffd148e0d313f7c9",
+          "repository_sha256": "a99d5b1f455454fda3f460fce96951aa1f66f02c568006f2ffd148e0d313f7c9",
+          "previous_repository_sha256": "a99d5b1f455454fda3f460fce96951aa1f66f02c568006f2ffd148e0d313f7c9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/train.py",
+          "repository_path": "recommendation/train.py",
+          "bytes": 13009,
+          "remote_sha256": "14cd67d571402cc31c09382eff328cf4da3f7f4269979540d497995871da40d0",
+          "repository_sha256": "14cd67d571402cc31c09382eff328cf4da3f7f4269979540d497995871da40d0",
+          "previous_repository_sha256": "14cd67d571402cc31c09382eff328cf4da3f7f4269979540d497995871da40d0",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/train_auc.py",
+          "repository_path": "recommendation/train_auc.py",
+          "bytes": 14610,
+          "remote_sha256": "7d842263455d27f56e08478a54ee89121fecd6abab586c6c34ea3a37b84e4997",
+          "repository_sha256": "7d842263455d27f56e08478a54ee89121fecd6abab586c6c34ea3a37b84e4997",
+          "previous_repository_sha256": "7d842263455d27f56e08478a54ee89121fecd6abab586c6c34ea3a37b84e4997",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/train_features.py",
+          "repository_path": "recommendation/train_features.py",
+          "bytes": 14315,
+          "remote_sha256": "55c200259081038f2669a61e6329099eabf817c6600b9c41adfd73e775c7f9d3",
+          "repository_sha256": "55c200259081038f2669a61e6329099eabf817c6600b9c41adfd73e775c7f9d3",
+          "previous_repository_sha256": "55c200259081038f2669a61e6329099eabf817c6600b9c41adfd73e775c7f9d3",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/train_sequence.py",
+          "repository_path": "recommendation/train_sequence.py",
+          "bytes": 16165,
+          "remote_sha256": "511355c57deb8a300976a01dc8913664c38c400f55f69c4974f0b5d10d3bfd55",
+          "repository_sha256": "511355c57deb8a300976a01dc8913664c38c400f55f69c4974f0b5d10d3bfd55",
+          "previous_repository_sha256": "511355c57deb8a300976a01dc8913664c38c400f55f69c4974f0b5d10d3bfd55",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/verify_auc.py",
+          "repository_path": "recommendation/verify_auc.py",
+          "bytes": 3766,
+          "remote_sha256": "5e1ee09e80e2a49c83d8d3bb72d228ab30b82d2d2014ec9c759b66cdd8f287aa",
+          "repository_sha256": "5e1ee09e80e2a49c83d8d3bb72d228ab30b82d2d2014ec9c759b66cdd8f287aa",
+          "previous_repository_sha256": "5e1ee09e80e2a49c83d8d3bb72d228ab30b82d2d2014ec9c759b66cdd8f287aa",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/verify_sequence.py",
+          "repository_path": "recommendation/verify_sequence.py",
+          "bytes": 7644,
+          "remote_sha256": "749d659f1750d4304ac1cb65343a838bdc73e23a26d07fb27c57bd843381201e",
+          "repository_sha256": "749d659f1750d4304ac1cb65343a838bdc73e23a26d07fb27c57bd843381201e",
+          "previous_repository_sha256": "749d659f1750d4304ac1cb65343a838bdc73e23a26d07fb27c57bd843381201e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/README.md",
+          "repository_path": "recommendation/aitm_aliccp_official/README.md",
+          "bytes": 6442,
+          "remote_sha256": "6b924c1841e26ffa572c6615a206f6147a836e9e7e866941a40f9a0634423694",
+          "repository_sha256": "6e412a3f377bee43d0586ad51bbbaaf4775123a7bba1c95d40f2ccd868a6ca42",
+          "previous_repository_sha256": "8583681478bef6a57ec28dc614609ba7120b93477d1dfe3f7cf8df66e2601b75",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/metrics.py",
+          "repository_path": "recommendation/aitm_aliccp_official/metrics.py",
+          "bytes": 3011,
+          "remote_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "previous_repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/model.py",
+          "repository_path": "recommendation/aitm_aliccp_official/model.py",
+          "bytes": 4999,
+          "remote_sha256": "1fb702a8f2c98e00f8c201a531621dd7d62deecbd10018ef87fc0c9a6b38abe4",
+          "repository_sha256": "1fb702a8f2c98e00f8c201a531621dd7d62deecbd10018ef87fc0c9a6b38abe4",
+          "previous_repository_sha256": "1fb702a8f2c98e00f8c201a531621dd7d62deecbd10018ef87fc0c9a6b38abe4",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/prepare.py",
+          "repository_path": "recommendation/aitm_aliccp_official/prepare.py",
+          "bytes": 6651,
+          "remote_sha256": "ff4831ae75e7cbd5e8527982ac4942350511df9257cfe3d86351130af2e33043",
+          "repository_sha256": "ff4831ae75e7cbd5e8527982ac4942350511df9257cfe3d86351130af2e33043",
+          "previous_repository_sha256": "ff4831ae75e7cbd5e8527982ac4942350511df9257cfe3d86351130af2e33043",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/raw_data.py",
+          "repository_path": "recommendation/aitm_aliccp_official/raw_data.py",
+          "bytes": 5730,
+          "remote_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "previous_repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/start.sh",
+          "repository_path": "recommendation/aitm_aliccp_official/start.sh",
+          "bytes": 735,
+          "remote_sha256": "7e065a76adfe01be73c98ba625fd56bbd5f4fe33de5b240b651fa8220eb375be",
+          "repository_sha256": "7e065a76adfe01be73c98ba625fd56bbd5f4fe33de5b240b651fa8220eb375be",
+          "previous_repository_sha256": "7e065a76adfe01be73c98ba625fd56bbd5f4fe33de5b240b651fa8220eb375be",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/test_author_port.py",
+          "repository_path": "recommendation/aitm_aliccp_official/test_author_port.py",
+          "bytes": 7943,
+          "remote_sha256": "9540e4b6e621367604ac963f96e97ed424d7bf7fdd47d0af00fe6fedbe69256b",
+          "repository_sha256": "9540e4b6e621367604ac963f96e97ed424d7bf7fdd47d0af00fe6fedbe69256b",
+          "previous_repository_sha256": "9540e4b6e621367604ac963f96e97ed424d7bf7fdd47d0af00fe6fedbe69256b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/train.py",
+          "repository_path": "recommendation/aitm_aliccp_official/train.py",
+          "bytes": 11550,
+          "remote_sha256": "07ef777249834ad736019857def0b6f47469c6c7a2620ec6ecf320700fe8a88e",
+          "repository_sha256": "07ef777249834ad736019857def0b6f47469c6c7a2620ec6ecf320700fe8a88e",
+          "previous_repository_sha256": "07ef777249834ad736019857def0b6f47469c6c7a2620ec6ecf320700fe8a88e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/AITM.py",
+          "repository_path": "recommendation/aitm_aliccp_official/official/AITM.py",
+          "bytes": 28302,
+          "remote_sha256": "b3e788a64f78967e497142fc89c5ba61f217340931601daaf91ecaa2f81e1837",
+          "repository_sha256": "b3e788a64f78967e497142fc89c5ba61f217340931601daaf91ecaa2f81e1837",
+          "previous_repository_sha256": "b3e788a64f78967e497142fc89c5ba61f217340931601daaf91ecaa2f81e1837",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/AITM_standard.py",
+          "repository_path": "recommendation/aitm_aliccp_official/official/AITM_standard.py",
+          "bytes": 44089,
+          "remote_sha256": "b4e65e78aa1f54eaa5c16d4bb28cae0db000d90e35724031738c9f56dc8345d9",
+          "repository_sha256": "b4e65e78aa1f54eaa5c16d4bb28cae0db000d90e35724031738c9f56dc8345d9",
+          "previous_repository_sha256": "b4e65e78aa1f54eaa5c16d4bb28cae0db000d90e35724031738c9f56dc8345d9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/LICENSE",
+          "repository_path": "recommendation/aitm_aliccp_official/official/LICENSE",
+          "bytes": 1066,
+          "remote_sha256": "2755c4367205e20f9d07a3720a4cc36a734affa2b70c218c3e33729ae440eab3",
+          "repository_sha256": "2755c4367205e20f9d07a3720a4cc36a734affa2b70c218c3e33729ae440eab3",
+          "previous_repository_sha256": "2755c4367205e20f9d07a3720a4cc36a734affa2b70c218c3e33729ae440eab3",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/README.md",
+          "repository_path": "recommendation/aitm_aliccp_official/official/README.md",
+          "bytes": 2242,
+          "remote_sha256": "be8b470d1132b0ef01f0e06c8c9ee0e6515ca32bf96fc23fc1bf58c6ba5c526b",
+          "repository_sha256": "be8b470d1132b0ef01f0e06c8c9ee0e6515ca32bf96fc23fc1bf58c6ba5c526b",
+          "previous_repository_sha256": "be8b470d1132b0ef01f0e06c8c9ee0e6515ca32bf96fc23fc1bf58c6ba5c526b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/manifest.json",
+          "repository_path": "recommendation/aitm_aliccp_official/official/manifest.json",
+          "bytes": 1356,
+          "remote_sha256": "7837c8b4d3fa6daeae57facbeb96e4d151734c18ee728d45895ea26e45514469",
+          "repository_sha256": "7837c8b4d3fa6daeae57facbeb96e4d151734c18ee728d45895ea26e45514469",
+          "previous_repository_sha256": "7837c8b4d3fa6daeae57facbeb96e4d151734c18ee728d45895ea26e45514469",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/aitm_aliccp_official/official/process_public_dataset.py",
+          "repository_path": "recommendation/aitm_aliccp_official/official/process_public_dataset.py",
+          "bytes": 7240,
+          "remote_sha256": "615249f854ca452add131516ae81f217ff54bdb48d954376f129e90db757f084",
+          "repository_sha256": "615249f854ca452add131516ae81f217ff54bdb48d954376f129e90db757f084",
+          "previous_repository_sha256": "615249f854ca452add131516ae81f217ff54bdb48d954376f129e90db757f084",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/README.md",
+          "repository_path": "recommendation/esmm/README.md",
+          "bytes": 1286,
+          "remote_sha256": "038522e1f40a0fb892b24e7ebcf06e4c0b15c34b55d64e77221f051554528910",
+          "repository_sha256": "56d9e32e665f6d109832fc959741881c59b6d5c614dd2f872131b82bd6a477b9",
+          "previous_repository_sha256": "685d60a0515140e97591029538bf81eb91f95d31250c090206d2ebb4378f253f",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/esmm/data.py",
+          "repository_path": "recommendation/esmm/data.py",
+          "bytes": 10345,
+          "remote_sha256": "7a25a9c3a8ff0646b77a35a400001169c546e350edadd714a7e38e8e86816ac9",
+          "repository_sha256": "7a25a9c3a8ff0646b77a35a400001169c546e350edadd714a7e38e8e86816ac9",
+          "previous_repository_sha256": "7a25a9c3a8ff0646b77a35a400001169c546e350edadd714a7e38e8e86816ac9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/metrics.py",
+          "repository_path": "recommendation/esmm/metrics.py",
+          "bytes": 2144,
+          "remote_sha256": "db62bf5a38fb8ff60d319d7557465cef3f3dfa0681e4521b03967f7c54243aac",
+          "repository_sha256": "db62bf5a38fb8ff60d319d7557465cef3f3dfa0681e4521b03967f7c54243aac",
+          "previous_repository_sha256": "db62bf5a38fb8ff60d319d7557465cef3f3dfa0681e4521b03967f7c54243aac",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/model.py",
+          "repository_path": "recommendation/esmm/model.py",
+          "bytes": 3295,
+          "remote_sha256": "13bcf509207e747e4ff66dac8499124ce2fb4f25a4f66e0c1c1697deb5e2556e",
+          "repository_sha256": "13bcf509207e747e4ff66dac8499124ce2fb4f25a4f66e0c1c1697deb5e2556e",
+          "previous_repository_sha256": "13bcf509207e747e4ff66dac8499124ce2fb4f25a4f66e0c1c1697deb5e2556e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/report.py",
+          "repository_path": "recommendation/esmm/report.py",
+          "bytes": 6087,
+          "remote_sha256": "9e9c84d4de2bc2bb552e4128dc90e136aee9127111bf2fdae05b5314efb50b74",
+          "repository_sha256": "9e9c84d4de2bc2bb552e4128dc90e136aee9127111bf2fdae05b5314efb50b74",
+          "previous_repository_sha256": "9e9c84d4de2bc2bb552e4128dc90e136aee9127111bf2fdae05b5314efb50b74",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/score.py",
+          "repository_path": "recommendation/esmm/score.py",
+          "bytes": 2646,
+          "remote_sha256": "872e02ba1fb39acc9f87aaf245947f82543fec70e829c3c76824488970685665",
+          "repository_sha256": "872e02ba1fb39acc9f87aaf245947f82543fec70e829c3c76824488970685665",
+          "previous_repository_sha256": "872e02ba1fb39acc9f87aaf245947f82543fec70e829c3c76824488970685665",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/start.sh",
+          "repository_path": "recommendation/esmm/start.sh",
+          "bytes": 495,
+          "remote_sha256": "63a8152ab88fae6ba6d1df3c31a2d0e618aa28c255a553a7d5dac808b72e8ae9",
+          "repository_sha256": "63a8152ab88fae6ba6d1df3c31a2d0e618aa28c255a553a7d5dac808b72e8ae9",
+          "previous_repository_sha256": "63a8152ab88fae6ba6d1df3c31a2d0e618aa28c255a553a7d5dac808b72e8ae9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/test_esmm.py",
+          "repository_path": "recommendation/esmm/test_esmm.py",
+          "bytes": 5620,
+          "remote_sha256": "f1846ab084ae9f6839434b6c7725e90b02d1adc3f2f9cb1e545b61144bcf71ec",
+          "repository_sha256": "f1846ab084ae9f6839434b6c7725e90b02d1adc3f2f9cb1e545b61144bcf71ec",
+          "previous_repository_sha256": "f1846ab084ae9f6839434b6c7725e90b02d1adc3f2f9cb1e545b61144bcf71ec",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/train.py",
+          "repository_path": "recommendation/esmm/train.py",
+          "bytes": 11681,
+          "remote_sha256": "c6437e370adda0ae25fe46870f43876058a950d0a6ba9ee7d8a93575a3e0e0b0",
+          "repository_sha256": "c6437e370adda0ae25fe46870f43876058a950d0a6ba9ee7d8a93575a3e0e0b0",
+          "previous_repository_sha256": "c6437e370adda0ae25fe46870f43876058a950d0a6ba9ee7d8a93575a3e0e0b0",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm/verify.py",
+          "repository_path": "recommendation/esmm/verify.py",
+          "bytes": 4742,
+          "remote_sha256": "d1c7630190d50a3d6ab22b19fdb6129d9ec55afc7bd9ad4c85fc2b1fb086a062",
+          "repository_sha256": "d1c7630190d50a3d6ab22b19fdb6129d9ec55afc7bd9ad4c85fc2b1fb086a062",
+          "previous_repository_sha256": "d1c7630190d50a3d6ab22b19fdb6129d9ec55afc7bd9ad4c85fc2b1fb086a062",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/README.md",
+          "repository_path": "recommendation/esmm_aliccp/README.md",
+          "bytes": 2048,
+          "remote_sha256": "5eb89b2d8fb7e9ff6b3727a458090b623334c94f928993b38ae5ba78a4b394b9",
+          "repository_sha256": "e972a0a1117a1d624cd9c2af49a66564bd441ee0b878f935973deb1f92587d7c",
+          "previous_repository_sha256": "f63c2b2a6a07813375aa7b42ab2ee05068a96289658176c7d2a0b3b3c7a70f98",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/data.py",
+          "repository_path": "recommendation/esmm_aliccp/data.py",
+          "bytes": 8311,
+          "remote_sha256": "d14cb40c4ba50e7023e21fd442fb2bd8916f7d84ac050797b61576dfba84088d",
+          "repository_sha256": "d14cb40c4ba50e7023e21fd442fb2bd8916f7d84ac050797b61576dfba84088d",
+          "previous_repository_sha256": "d14cb40c4ba50e7023e21fd442fb2bd8916f7d84ac050797b61576dfba84088d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/metrics.py",
+          "repository_path": "recommendation/esmm_aliccp/metrics.py",
+          "bytes": 3011,
+          "remote_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "previous_repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/model.py",
+          "repository_path": "recommendation/esmm_aliccp/model.py",
+          "bytes": 2534,
+          "remote_sha256": "be69123aec74de0a3b32d368b14e65a0ebe5d3703805ce9021ed0ca6d0681ac5",
+          "repository_sha256": "be69123aec74de0a3b32d368b14e65a0ebe5d3703805ce9021ed0ca6d0681ac5",
+          "previous_repository_sha256": "be69123aec74de0a3b32d368b14e65a0ebe5d3703805ce9021ed0ca6d0681ac5",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/report.py",
+          "repository_path": "recommendation/esmm_aliccp/report.py",
+          "bytes": 6717,
+          "remote_sha256": "8a6397510b9691796c83a4833e1b87ea49a052ad2f5a60902395a7265d38c44f",
+          "repository_sha256": "8a6397510b9691796c83a4833e1b87ea49a052ad2f5a60902395a7265d38c44f",
+          "previous_repository_sha256": "8a6397510b9691796c83a4833e1b87ea49a052ad2f5a60902395a7265d38c44f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/score.py",
+          "repository_path": "recommendation/esmm_aliccp/score.py",
+          "bytes": 2399,
+          "remote_sha256": "45b96b77fb0ad873e811ced77e2c027227d9f2c0f8a64dff33849c8635d60fb0",
+          "repository_sha256": "45b96b77fb0ad873e811ced77e2c027227d9f2c0f8a64dff33849c8635d60fb0",
+          "previous_repository_sha256": "45b96b77fb0ad873e811ced77e2c027227d9f2c0f8a64dff33849c8635d60fb0",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/start.sh",
+          "repository_path": "recommendation/esmm_aliccp/start.sh",
+          "bytes": 774,
+          "remote_sha256": "01fa68c1f71a487e5c965ca5fa85541f53adbaf1351a34bd9cf35fb02f5e094c",
+          "repository_sha256": "01fa68c1f71a487e5c965ca5fa85541f53adbaf1351a34bd9cf35fb02f5e094c",
+          "previous_repository_sha256": "01fa68c1f71a487e5c965ca5fa85541f53adbaf1351a34bd9cf35fb02f5e094c",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/test_aliccp.py",
+          "repository_path": "recommendation/esmm_aliccp/test_aliccp.py",
+          "bytes": 3980,
+          "remote_sha256": "828cf046e28994db3e8629e24a918a34599a7737590a74c848befea17005f5aa",
+          "repository_sha256": "828cf046e28994db3e8629e24a918a34599a7737590a74c848befea17005f5aa",
+          "previous_repository_sha256": "828cf046e28994db3e8629e24a918a34599a7737590a74c848befea17005f5aa",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/train.py",
+          "repository_path": "recommendation/esmm_aliccp/train.py",
+          "bytes": 12271,
+          "remote_sha256": "c8bf5e8e6247e53f57fb08730e43ba69bcc0c0ca9f350ca54d52bbf38032736b",
+          "repository_sha256": "c8bf5e8e6247e53f57fb08730e43ba69bcc0c0ca9f350ca54d52bbf38032736b",
+          "previous_repository_sha256": "c8bf5e8e6247e53f57fb08730e43ba69bcc0c0ca9f350ca54d52bbf38032736b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp/verify.py",
+          "repository_path": "recommendation/esmm_aliccp/verify.py",
+          "bytes": 4805,
+          "remote_sha256": "46ff0e49b5ca7ad5203635e34bd933cab225834a507007465d527ef28ceba1d9",
+          "repository_sha256": "46ff0e49b5ca7ad5203635e34bd933cab225834a507007465d527ef28ceba1d9",
+          "previous_repository_sha256": "46ff0e49b5ca7ad5203635e34bd933cab225834a507007465d527ef28ceba1d9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/README.md",
+          "repository_path": "recommendation/esmm_aliccp_attention/README.md",
+          "bytes": 5004,
+          "remote_sha256": "26b24d3b17f4cc162b5d73b814d537dcabfa9ecdc2a458e82447c879fab5e756",
+          "repository_sha256": "cc1a82ddfb6979d4bbad8d902897d54e3ac45fc4bf1b34a2a394006d570b668b",
+          "previous_repository_sha256": "8df69021f7aa18409231719250eeb8fa10709fc6dea2e84b7d661261edd75b84",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/base_model.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/base_model.py",
+          "bytes": 6030,
+          "remote_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "repository_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "previous_repository_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/data.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/data.py",
+          "bytes": 5730,
+          "remote_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "previous_repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/metrics.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/metrics.py",
+          "bytes": 3011,
+          "remote_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "previous_repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/model.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/model.py",
+          "bytes": 4394,
+          "remote_sha256": "3f9a6940119681f60118df6caf5dbe4bf2dd1d483972e30f439cdfe679695c58",
+          "repository_sha256": "3f9a6940119681f60118df6caf5dbe4bf2dd1d483972e30f439cdfe679695c58",
+          "previous_repository_sha256": "3f9a6940119681f60118df6caf5dbe4bf2dd1d483972e30f439cdfe679695c58",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/run_when_ready.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/run_when_ready.py",
+          "bytes": 5134,
+          "remote_sha256": "bebb348e34dcab184d25a3be234ca64188742e2bf874b9fd922a29f29c0c506d",
+          "repository_sha256": "e6c75f004b53a90605f0ecc263ab70df7cdedd80a92d7dd66a03c78d5d40d0ef",
+          "previous_repository_sha256": "e6c75f004b53a90605f0ecc263ab70df7cdedd80a92d7dd66a03c78d5d40d0ef",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/smoke_batch.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/smoke_batch.py",
+          "bytes": 2727,
+          "remote_sha256": "2e0f6ab3298fe9617d90bdaca93e63dd2181181fb36213e7071b2d0558c85e1c",
+          "repository_sha256": "2e0f6ab3298fe9617d90bdaca93e63dd2181181fb36213e7071b2d0558c85e1c",
+          "previous_repository_sha256": "2e0f6ab3298fe9617d90bdaca93e63dd2181181fb36213e7071b2d0558c85e1c",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/start.sh",
+          "repository_path": "recommendation/esmm_aliccp_attention/start.sh",
+          "bytes": 1433,
+          "remote_sha256": "4ce9806f61058b5d0ab6686489c9259d090110ae1d751b7243a2111229ddd26e",
+          "repository_sha256": "4ce9806f61058b5d0ab6686489c9259d090110ae1d751b7243a2111229ddd26e",
+          "previous_repository_sha256": "4ce9806f61058b5d0ab6686489c9259d090110ae1d751b7243a2111229ddd26e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/test_attention.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/test_attention.py",
+          "bytes": 7311,
+          "remote_sha256": "44c06f2b6a5e317ee1ae65813373c0faeaa47382e2881f621888ebe68841a701",
+          "repository_sha256": "44c06f2b6a5e317ee1ae65813373c0faeaa47382e2881f621888ebe68841a701",
+          "previous_repository_sha256": "44c06f2b6a5e317ee1ae65813373c0faeaa47382e2881f621888ebe68841a701",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/test_queue.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/test_queue.py",
+          "bytes": 3722,
+          "remote_sha256": "b8dbed509f2f8a6337d68aa3039b7fc3e6b1fdfd3c210c8b279600f56b1c05f2",
+          "repository_sha256": "b8dbed509f2f8a6337d68aa3039b7fc3e6b1fdfd3c210c8b279600f56b1c05f2",
+          "previous_repository_sha256": "b8dbed509f2f8a6337d68aa3039b7fc3e6b1fdfd3c210c8b279600f56b1c05f2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_attention/train.py",
+          "repository_path": "recommendation/esmm_aliccp_attention/train.py",
+          "bytes": 17260,
+          "remote_sha256": "2800b49e90dc7228dd7e7b8e61dc6a6c742c98a6b4286abe85b5df141e39e9b4",
+          "repository_sha256": "2800b49e90dc7228dd7e7b8e61dc6a6c742c98a6b4286abe85b5df141e39e9b4",
+          "previous_repository_sha256": "2800b49e90dc7228dd7e7b8e61dc6a6c742c98a6b4286abe85b5df141e39e9b4",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/README.md",
+          "repository_path": "recommendation/esmm_aliccp_full/README.md",
+          "bytes": 11333,
+          "remote_sha256": "780da42117e7ef7e63beb60ba82cd71505577ec55e1e1092a0552f44e757938d",
+          "repository_sha256": "a360fcb7f07d150dc9044ef8483abefa1b0a16acafd533f4566c820d60d7ad1f",
+          "previous_repository_sha256": "55e9f5a3eecec6bba5f740bf560b330d6f3d885778cee05ede11fd3c2fada9ae",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/data.py",
+          "repository_path": "recommendation/esmm_aliccp_full/data.py",
+          "bytes": 5730,
+          "remote_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "previous_repository_sha256": "aa7c0d911278889f298e160d801d2dd6016374d8b3b2fe750235c5ab773cf4f2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/data_audit.json",
+          "repository_path": "recommendation/esmm_aliccp_full/data_audit.json",
+          "bytes": 623,
+          "remote_sha256": "27ff468d0c7696cacc5b260cf42eb554b12c3fd60fc1bfb619c864903fce8aa1",
+          "repository_sha256": "27ff468d0c7696cacc5b260cf42eb554b12c3fd60fc1bfb619c864903fce8aa1",
+          "previous_repository_sha256": null,
+          "resolution": "imported_remote_version"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/download.py",
+          "repository_path": "recommendation/esmm_aliccp_full/download.py",
+          "bytes": 8304,
+          "remote_sha256": "f8f09adcb87526d3ce35a7aace9db99f203e0fa17de28bb3c8167597a0049a20",
+          "repository_sha256": "f8f09adcb87526d3ce35a7aace9db99f203e0fa17de28bb3c8167597a0049a20",
+          "previous_repository_sha256": "f8f09adcb87526d3ce35a7aace9db99f203e0fa17de28bb3c8167597a0049a20",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/download_full.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/download_full.sh",
+          "bytes": 506,
+          "remote_sha256": "abbe6168af3f004c82e564af3486d55a39b55202604258f6fcb343571112d763",
+          "repository_sha256": "abbe6168af3f004c82e564af3486d55a39b55202604258f6fcb343571112d763",
+          "previous_repository_sha256": "abbe6168af3f004c82e564af3486d55a39b55202604258f6fcb343571112d763",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/download_ranges.py",
+          "repository_path": "recommendation/esmm_aliccp_full/download_ranges.py",
+          "bytes": 3797,
+          "remote_sha256": "d4b3ed997880214f42e67a43f5a396641c57cf6630aab7a6c1b88772c00ceced",
+          "repository_sha256": "d4b3ed997880214f42e67a43f5a396641c57cf6630aab7a6c1b88772c00ceced",
+          "previous_repository_sha256": "d4b3ed997880214f42e67a43f5a396641c57cf6630aab7a6c1b88772c00ceced",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/download_requirements.txt",
+          "repository_path": "recommendation/esmm_aliccp_full/download_requirements.txt",
+          "bytes": 271,
+          "remote_sha256": "84d43e56dc5ffae2deb175bad6932a3d55add23423ea77b432ea97dec8e2990b",
+          "repository_sha256": "84d43e56dc5ffae2deb175bad6932a3d55add23423ea77b432ea97dec8e2990b",
+          "previous_repository_sha256": null,
+          "resolution": "imported_remote_version"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/metrics.py",
+          "repository_path": "recommendation/esmm_aliccp_full/metrics.py",
+          "bytes": 3011,
+          "remote_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "previous_repository_sha256": "42640b139d42c67d71587df7f7d0d791fd90b1f63919c61e4e1af261ed19513d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/model.py",
+          "repository_path": "recommendation/esmm_aliccp_full/model.py",
+          "bytes": 6030,
+          "remote_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "repository_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "previous_repository_sha256": "7fc567f4d11317e8845ba8e735fa6683df11869b19212560ba75c2dd5041b4b7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/prepare.cpp",
+          "repository_path": "recommendation/esmm_aliccp_full/prepare.cpp",
+          "bytes": 6042,
+          "remote_sha256": "e7523fb647bd7ddb648e33e1355a1377217fbf0b331f5e16110b7a9bbc9413d2",
+          "repository_sha256": "e7523fb647bd7ddb648e33e1355a1377217fbf0b331f5e16110b7a9bbc9413d2",
+          "previous_repository_sha256": "e7523fb647bd7ddb648e33e1355a1377217fbf0b331f5e16110b7a9bbc9413d2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/prepare_full.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/prepare_full.sh",
+          "bytes": 722,
+          "remote_sha256": "b73d666a3d9e60b2f371a8dfa03c1d9b1f165a95a89227016b476915afb87a8d",
+          "repository_sha256": "b73d666a3d9e60b2f371a8dfa03c1d9b1f165a95a89227016b476915afb87a8d",
+          "previous_repository_sha256": "b73d666a3d9e60b2f371a8dfa03c1d9b1f165a95a89227016b476915afb87a8d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/source_manifest.json",
+          "repository_path": "recommendation/esmm_aliccp_full/source_manifest.json",
+          "bytes": 1277,
+          "remote_sha256": "d063be54baeedd7c95da23f33e25dbea6d494ff1ac8914735206ed362257f587",
+          "repository_sha256": "8c96c204d3251133a1eda252f694cee7ea9f96bd524cbd58cd82c12ec4b738e0",
+          "previous_repository_sha256": "b66b25dd6dbb9e6adc31e5e7d9102c64b7c6dca92524832f16a0cb026d02309a",
+          "resolution": "merged_historical_metadata_without_stale_disk_status"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/start_full.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/start_full.sh",
+          "bytes": 801,
+          "remote_sha256": "9bf974e355ed3cc65f208114ab8b66823a619d42cae8d0a7a365096b2c95e5f8",
+          "repository_sha256": "9bf974e355ed3cc65f208114ab8b66823a619d42cae8d0a7a365096b2c95e5f8",
+          "previous_repository_sha256": "9bf974e355ed3cc65f208114ab8b66823a619d42cae8d0a7a365096b2c95e5f8",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/start_id64.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/start_id64.sh",
+          "bytes": 980,
+          "remote_sha256": "94e399a776ae3df3586e2dff8f42e044f7fc1bbcb999e5c46ba5351d2475f358",
+          "repository_sha256": "94e399a776ae3df3586e2dff8f42e044f7fc1bbcb999e5c46ba5351d2475f358",
+          "previous_repository_sha256": "94e399a776ae3df3586e2dff8f42e044f7fc1bbcb999e5c46ba5351d2475f358",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/start_id64_lr1e4.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/start_id64_lr1e4.sh",
+          "bytes": 1016,
+          "remote_sha256": "79376cfd61fff3ef11f3a54b86513c8a0237fc1829aff3f1c6ac47ce8891991e",
+          "repository_sha256": "79376cfd61fff3ef11f3a54b86513c8a0237fc1829aff3f1c6ac47ce8891991e",
+          "previous_repository_sha256": "79376cfd61fff3ef11f3a54b86513c8a0237fc1829aff3f1c6ac47ce8891991e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/start_id64_lr3e4.sh",
+          "repository_path": "recommendation/esmm_aliccp_full/start_id64_lr3e4.sh",
+          "bytes": 1015,
+          "remote_sha256": "c18b7b2038edf6a252869ad05ec15b5044ba6ea354df5fbe87b9345f2cfbf6cf",
+          "repository_sha256": "c18b7b2038edf6a252869ad05ec15b5044ba6ea354df5fbe87b9345f2cfbf6cf",
+          "previous_repository_sha256": "c18b7b2038edf6a252869ad05ec15b5044ba6ea354df5fbe87b9345f2cfbf6cf",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/test_download.py",
+          "repository_path": "recommendation/esmm_aliccp_full/test_download.py",
+          "bytes": 3512,
+          "remote_sha256": "f56eb5cff881f36a2de60958e0319cc7003f593f9eae1216acc0c0745ec20e72",
+          "repository_sha256": "f56eb5cff881f36a2de60958e0319cc7003f593f9eae1216acc0c0745ec20e72",
+          "previous_repository_sha256": "f56eb5cff881f36a2de60958e0319cc7003f593f9eae1216acc0c0745ec20e72",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/test_mixed_embedding.py",
+          "repository_path": "recommendation/esmm_aliccp_full/test_mixed_embedding.py",
+          "bytes": 4584,
+          "remote_sha256": "1ed609d43419ab646fbe172bbe6493e18b588975eb4cf2d0aae3b7369105b6ce",
+          "repository_sha256": "1ed609d43419ab646fbe172bbe6493e18b588975eb4cf2d0aae3b7369105b6ce",
+          "previous_repository_sha256": "1ed609d43419ab646fbe172bbe6493e18b588975eb4cf2d0aae3b7369105b6ce",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/test_pipeline.py",
+          "repository_path": "recommendation/esmm_aliccp_full/test_pipeline.py",
+          "bytes": 4595,
+          "remote_sha256": "848ff9b7306717ff5f6e1c7eb6a03b5f805f3aea2a98360df4663155f04c3353",
+          "repository_sha256": "848ff9b7306717ff5f6e1c7eb6a03b5f805f3aea2a98360df4663155f04c3353",
+          "previous_repository_sha256": "848ff9b7306717ff5f6e1c7eb6a03b5f805f3aea2a98360df4663155f04c3353",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/test_ranges.py",
+          "repository_path": "recommendation/esmm_aliccp_full/test_ranges.py",
+          "bytes": 1048,
+          "remote_sha256": "97702a2d38815aa03695ade838d5e6e5d465e6e9c96c5b745282514c1f478d8f",
+          "repository_sha256": "97702a2d38815aa03695ade838d5e6e5d465e6e9c96c5b745282514c1f478d8f",
+          "previous_repository_sha256": "97702a2d38815aa03695ade838d5e6e5d465e6e9c96c5b745282514c1f478d8f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/train.py",
+          "repository_path": "recommendation/esmm_aliccp_full/train.py",
+          "bytes": 15635,
+          "remote_sha256": "515e11294345daebec8d4e14037d495e35c93f6c07f9845af16bd971c25c6be2",
+          "repository_sha256": "515e11294345daebec8d4e14037d495e35c93f6c07f9845af16bd971c25c6be2",
+          "previous_repository_sha256": "515e11294345daebec8d4e14037d495e35c93f6c07f9845af16bd971c25c6be2",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/esmm_aliccp_full/verify_raw.py",
+          "repository_path": "recommendation/esmm_aliccp_full/verify_raw.py",
+          "bytes": 2873,
+          "remote_sha256": "ed3857d306e720e2f208a2dc64692245fcdda4f54b0ac05f3f19d83c7f249f0b",
+          "repository_sha256": "ed3857d306e720e2f208a2dc64692245fcdda4f54b0ac05f3f19d83c7f249f0b",
+          "previous_repository_sha256": "ed3857d306e720e2f208a2dc64692245fcdda4f54b0ac05f3f19d83c7f249f0b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/CURRENT_RUN.md",
+          "repository_path": "recommendation/generative_beauty/CURRENT_RUN.md",
+          "bytes": 1692,
+          "remote_sha256": "eb58f2f32844605bb69fbd68cce2c2f8486961da0b18b92a9ebe9d99471d1b2d",
+          "repository_sha256": "35bf1ead34bec22fdc8e30b628b6f0f181092819ac7533019b675ccc03de3ac7",
+          "previous_repository_sha256": "db2997c96def9e058d26eb9f99f8bd76ae6816146bbdde1206b4322540028291",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/README.md",
+          "repository_path": "recommendation/generative_beauty/README.md",
+          "bytes": 8094,
+          "remote_sha256": "4608ac76f116e7b222a3d14d62194bd43877f811e606766756af358ff36fab52",
+          "repository_sha256": "245cc1632d8dcd68c1200086b7acd7655ed758c26c4e63d9f48c3b6a5cb6ee8b",
+          "previous_repository_sha256": "bdd18e4a6bdcd3b9906616a45657195f7ef295ea01fd173983792fc354cfeb4f",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/download.py",
+          "repository_path": "recommendation/generative_beauty/download.py",
+          "bytes": 3663,
+          "remote_sha256": "ae27d316ae7c70b560444d52b3fdd4fbb614a46a0027cc694c6bd48769960d00",
+          "repository_sha256": "ae27d316ae7c70b560444d52b3fdd4fbb614a46a0027cc694c6bd48769960d00",
+          "previous_repository_sha256": "ae27d316ae7c70b560444d52b3fdd4fbb614a46a0027cc694c6bd48769960d00",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/models.py",
+          "repository_path": "recommendation/generative_beauty/models.py",
+          "bytes": 7466,
+          "remote_sha256": "338000f0ddc147d1f9c4fc7d702771b7d106d4b7b7c51896f2386891f893c6e6",
+          "repository_sha256": "338000f0ddc147d1f9c4fc7d702771b7d106d4b7b7c51896f2386891f893c6e6",
+          "previous_repository_sha256": "338000f0ddc147d1f9c4fc7d702771b7d106d4b7b7c51896f2386891f893c6e6",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/prepare.py",
+          "repository_path": "recommendation/generative_beauty/prepare.py",
+          "bytes": 9720,
+          "remote_sha256": "9455778a35e981e70313bc09af671064cb08be345ca846098c38b6a8b66e2a0e",
+          "repository_sha256": "9455778a35e981e70313bc09af671064cb08be345ca846098c38b6a8b66e2a0e",
+          "previous_repository_sha256": "9455778a35e981e70313bc09af671064cb08be345ca846098c38b6a8b66e2a0e",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/recommend.py",
+          "repository_path": "recommendation/generative_beauty/recommend.py",
+          "bytes": 2450,
+          "remote_sha256": "feb7ffac54aa24162677e0eb9ebc773c18826c3dc0765a1d9db9a25b88b07b86",
+          "repository_sha256": "feb7ffac54aa24162677e0eb9ebc773c18826c3dc0765a1d9db9a25b88b07b86",
+          "previous_repository_sha256": "feb7ffac54aa24162677e0eb9ebc773c18826c3dc0765a1d9db9a25b88b07b86",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/start_train.sh",
+          "repository_path": "recommendation/generative_beauty/start_train.sh",
+          "bytes": 459,
+          "remote_sha256": "8ae3c80b8b951dc2f54c351c9390ff683e647449c0d63d19131bac6c8048e244",
+          "repository_sha256": "8ae3c80b8b951dc2f54c351c9390ff683e647449c0d63d19131bac6c8048e244",
+          "previous_repository_sha256": "8ae3c80b8b951dc2f54c351c9390ff683e647449c0d63d19131bac6c8048e244",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/test_pipeline.py",
+          "repository_path": "recommendation/generative_beauty/test_pipeline.py",
+          "bytes": 3477,
+          "remote_sha256": "d1286ad0249a9bf62ffde1b41c707e9a3c37c5b50d93caa627d8ad7c2ed18328",
+          "repository_sha256": "d1286ad0249a9bf62ffde1b41c707e9a3c37c5b50d93caa627d8ad7c2ed18328",
+          "previous_repository_sha256": "d1286ad0249a9bf62ffde1b41c707e9a3c37c5b50d93caa627d8ad7c2ed18328",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_beauty/train.py",
+          "repository_path": "recommendation/generative_beauty/train.py",
+          "bytes": 14637,
+          "remote_sha256": "453244e47330f8f2cd6a1bc433dba095f925a9565480c23fa107d47225abb68f",
+          "repository_sha256": "453244e47330f8f2cd6a1bc433dba095f925a9565480c23fa107d47225abb68f",
+          "previous_repository_sha256": "453244e47330f8f2cd6a1bc433dba095f925a9565480c23fa107d47225abb68f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/CURRENT_RUN.md",
+          "repository_path": "recommendation/generative_books/CURRENT_RUN.md",
+          "bytes": 14431,
+          "remote_sha256": "5b751a2aa1587224955f5914a7845f20ccb4cc9f73f40082fd2ff5cf7aa2068b",
+          "repository_sha256": "87d303c7ce779afd22b282208d8739df89d02e9c4c2056acddff5b97ea5a6e8e",
+          "previous_repository_sha256": "9c4209010eae580f030fd9b0cf3439c703a54ad03f1e1aabc0a28a806fe0138a",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/generative_books/README.md",
+          "repository_path": "recommendation/generative_books/README.md",
+          "bytes": 14346,
+          "remote_sha256": "6759a88b063fbb5435628f71742282faf75c15e476cbf151cad2c508f72def7a",
+          "repository_sha256": "5439e15ecf79d050cc5613c30f23208de4009ed1e8d9d998df9c8e0947beb95c",
+          "previous_repository_sha256": "2dec8b2a85f4475220d44269392feddc0ffe0497ed892305842affe07144eca3",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/generative_books/benchmark_capacity.py",
+          "repository_path": "recommendation/generative_books/benchmark_capacity.py",
+          "bytes": 2475,
+          "remote_sha256": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd",
+          "repository_sha256": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd",
+          "previous_repository_sha256": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/download.py",
+          "repository_path": "recommendation/generative_books/download.py",
+          "bytes": 5703,
+          "remote_sha256": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462",
+          "repository_sha256": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462",
+          "previous_repository_sha256": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/make_smoke_fixture.py",
+          "repository_path": "recommendation/generative_books/make_smoke_fixture.py",
+          "bytes": 1301,
+          "remote_sha256": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4",
+          "repository_sha256": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4",
+          "previous_repository_sha256": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/models.py",
+          "repository_path": "recommendation/generative_books/models.py",
+          "bytes": 10298,
+          "remote_sha256": "7174513eca2281f37b226d72ed7c576f544d9e9ead10c793b6097537421e60aa",
+          "repository_sha256": "0c9d313e6c1f0af70e6e83162240884a1fc70130dd570160a807b9037a61e1fd",
+          "previous_repository_sha256": "0c9d313e6c1f0af70e6e83162240884a1fc70130dd570160a807b9037a61e1fd",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "recommendation/generative_books/prepare.py",
+          "repository_path": "recommendation/generative_books/prepare.py",
+          "bytes": 12097,
+          "remote_sha256": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7",
+          "repository_sha256": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7",
+          "previous_repository_sha256": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/run_pipeline.sh",
+          "repository_path": "recommendation/generative_books/run_pipeline.sh",
+          "bytes": 1445,
+          "remote_sha256": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9",
+          "repository_sha256": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9",
+          "previous_repository_sha256": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/start_20epochs.sh",
+          "repository_path": "recommendation/generative_books/start_20epochs.sh",
+          "bytes": 641,
+          "remote_sha256": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54",
+          "repository_sha256": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54",
+          "previous_repository_sha256": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/start_train.sh",
+          "repository_path": "recommendation/generative_books/start_train.sh",
+          "bytes": 483,
+          "remote_sha256": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7",
+          "repository_sha256": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7",
+          "previous_repository_sha256": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/test_pipeline.py",
+          "repository_path": "recommendation/generative_books/test_pipeline.py",
+          "bytes": 7764,
+          "remote_sha256": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098",
+          "repository_sha256": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098",
+          "previous_repository_sha256": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/train.py",
+          "repository_path": "recommendation/generative_books/train.py",
+          "bytes": 18394,
+          "remote_sha256": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba",
+          "repository_sha256": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba",
+          "previous_repository_sha256": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/decoder_recovery/start_train.sh",
+          "repository_path": "recommendation/generative_books/decoder_recovery/start_train.sh",
+          "bytes": 1073,
+          "remote_sha256": "e3506a1f5fba5815695629d94983416777fce4280501014561a8d27ed87dcd91",
+          "repository_sha256": "e3506a1f5fba5815695629d94983416777fce4280501014561a8d27ed87dcd91",
+          "previous_repository_sha256": "e3506a1f5fba5815695629d94983416777fce4280501014561a8d27ed87dcd91",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/decoder_recovery/test_recovery.py",
+          "repository_path": "recommendation/generative_books/decoder_recovery/test_recovery.py",
+          "bytes": 2860,
+          "remote_sha256": "163406a96109fad290c824a478f56f054ac892d5fbd25104e7d509131ce46466",
+          "repository_sha256": "163406a96109fad290c824a478f56f054ac892d5fbd25104e7d509131ce46466",
+          "previous_repository_sha256": "163406a96109fad290c824a478f56f054ac892d5fbd25104e7d509131ce46466",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/decoder_recovery/train_recovery.py",
+          "repository_path": "recommendation/generative_books/decoder_recovery/train_recovery.py",
+          "bytes": 16700,
+          "remote_sha256": "fa85a76a036c78766562a7455689946711e15dcc7266590331d5f249b9d8867f",
+          "repository_sha256": "fa85a76a036c78766562a7455689946711e15dcc7266590331d5f249b9d8867f",
+          "previous_repository_sha256": "fa85a76a036c78766562a7455689946711e15dcc7266590331d5f249b9d8867f",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/README.md",
+          "repository_path": "recommendation/generative_books/tiger_scaling/README.md",
+          "bytes": 3354,
+          "remote_sha256": "4d9efb90ebf2f4cc22985890a2eeb23729343b5977f04e51a980a2990639d83a",
+          "repository_sha256": "f432d9630e0aa050331214996d01c93cb105dcb756b0c591cc5c5cbf602ffac2",
+          "previous_repository_sha256": "1b6fc68b700e13e4dd6188da45f7861af8b1484087000b9a11f59f301e0b271c",
+          "resolution": "merged_documentation_with_historical_context"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/artifacts.py",
+          "repository_path": "recommendation/generative_books/tiger_scaling/artifacts.py",
+          "bytes": 1089,
+          "remote_sha256": "692ae0e83cea1cee7b693d84aab9097ebbfcb7a1696ccf65368826ccec8e4a03",
+          "repository_sha256": "692ae0e83cea1cee7b693d84aab9097ebbfcb7a1696ccf65368826ccec8e4a03",
+          "previous_repository_sha256": "692ae0e83cea1cee7b693d84aab9097ebbfcb7a1696ccf65368826ccec8e4a03",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/benchmark_capacity.py",
+          "repository_path": "recommendation/generative_books/tiger_scaling/benchmark_capacity.py",
+          "bytes": 2385,
+          "remote_sha256": "11e9895d3ae561834b7b5aa69475c217b2ad43138314b8045789bfc97663dcea",
+          "repository_sha256": "11e9895d3ae561834b7b5aa69475c217b2ad43138314b8045789bfc97663dcea",
+          "previous_repository_sha256": "11e9895d3ae561834b7b5aa69475c217b2ad43138314b8045789bfc97663dcea",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/capacity_check.json",
+          "repository_path": "recommendation/generative_books/tiger_scaling/capacity_check.json",
+          "bytes": 422,
+          "remote_sha256": "a785edea0e419c3315dee6a199a4fa9371a76390c81a9a919bcdab19361ed441",
+          "repository_sha256": "a785edea0e419c3315dee6a199a4fa9371a76390c81a9a919bcdab19361ed441",
+          "previous_repository_sha256": null,
+          "resolution": "imported_remote_version"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/models.py",
+          "repository_path": "recommendation/generative_books/tiger_scaling/models.py",
+          "bytes": 10343,
+          "remote_sha256": "c9e4ccee2261f0b3f9e7ddb6f72c4afc409b816b68f9379e39c66bd6ea49cb60",
+          "repository_sha256": "c2f923be81a0789d923a8e2814085cba75167cdd118879e7af4e5941f06ab69b",
+          "previous_repository_sha256": "c2f923be81a0789d923a8e2814085cba75167cdd118879e7af4e5941f06ab69b",
+          "resolution": "formatting_only"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/start_train.sh",
+          "repository_path": "recommendation/generative_books/tiger_scaling/start_train.sh",
+          "bytes": 923,
+          "remote_sha256": "dc4a5da08ac6931bded614b25f08a2c4b65e36f46313cd02a3db6764baf8fe30",
+          "repository_sha256": "dc4a5da08ac6931bded614b25f08a2c4b65e36f46313cd02a3db6764baf8fe30",
+          "previous_repository_sha256": "dc4a5da08ac6931bded614b25f08a2c4b65e36f46313cd02a3db6764baf8fe30",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/test_scaling.py",
+          "repository_path": "recommendation/generative_books/tiger_scaling/test_scaling.py",
+          "bytes": 3364,
+          "remote_sha256": "b51aa2a6643f9c69f22b6b02024ec658210af56020bf2e6c9dd072771c72e025",
+          "repository_sha256": "b51aa2a6643f9c69f22b6b02024ec658210af56020bf2e6c9dd072771c72e025",
+          "previous_repository_sha256": "b51aa2a6643f9c69f22b6b02024ec658210af56020bf2e6c9dd072771c72e025",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "recommendation/generative_books/tiger_scaling/train.py",
+          "repository_path": "recommendation/generative_books/tiger_scaling/train.py",
+          "bytes": 19515,
+          "remote_sha256": "08155dd4a2f29a7807c14a38ef9d92d5f88a043ab6ec566c140246c9dca2f684",
+          "repository_sha256": "08155dd4a2f29a7807c14a38ef9d92d5f88a043ab6ec566c140246c9dca2f684",
+          "previous_repository_sha256": "08155dd4a2f29a7807c14a38ef9d92d5f88a043ab6ec566c140246c9dca2f684",
+          "resolution": "already_identical"
+        }
+      ]
+    },
+    {
+      "ssh_alias": "deeplearning-dl-2",
+      "source_root": "/root/autodl-tmp/deeplearning-lab",
+      "source_files": 8,
+      "source_bytes": 22248,
+      "excluded_directory_names": [
+        "__pycache__",
+        "backups",
+        "checkpoints",
+        "data",
+        "env",
+        "models",
+        "node_modules",
+        "runs",
+        "smoke_fixture",
+        "venv",
+        "weights"
+      ],
+      "skipped": [
+        {
+          "path": "rl/qwen7b_grpo/._config.json",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._download_model.py",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._experiment.py",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._requirements.txt",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._rewards.py",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._run.sh",
+          "reason": "runtime_or_sensitive_name"
+        },
+        {
+          "path": "rl/qwen7b_grpo/._test_rewards.py",
+          "reason": "runtime_or_sensitive_name"
+        }
+      ],
+      "files": [
+        {
+          "remote_path": "rl/qwen7b_grpo/config.json",
+          "repository_path": "rl/qwen7b_grpo/config.json",
+          "bytes": 840,
+          "remote_sha256": "020cab93bb43eba936963e5ea18480984f815a5fe0563a8bdc6fdf9ec7e970f9",
+          "repository_sha256": "020cab93bb43eba936963e5ea18480984f815a5fe0563a8bdc6fdf9ec7e970f9",
+          "previous_repository_sha256": "020cab93bb43eba936963e5ea18480984f815a5fe0563a8bdc6fdf9ec7e970f9",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/download_model.py",
+          "repository_path": "rl/qwen7b_grpo/download_model.py",
+          "bytes": 790,
+          "remote_sha256": "283bdf8de73f56f1ab557cb75f657520d220d4b7be02551268d40439e258d4d8",
+          "repository_sha256": "283bdf8de73f56f1ab557cb75f657520d220d4b7be02551268d40439e258d4d8",
+          "previous_repository_sha256": "283bdf8de73f56f1ab557cb75f657520d220d4b7be02551268d40439e258d4d8",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/experiment.py",
+          "repository_path": "rl/qwen7b_grpo/experiment.py",
+          "bytes": 14194,
+          "remote_sha256": "ceeb6144042c1e8611a873e703782b27ae198fa1615748ab2d92385459b2e90b",
+          "repository_sha256": "ceeb6144042c1e8611a873e703782b27ae198fa1615748ab2d92385459b2e90b",
+          "previous_repository_sha256": "ceeb6144042c1e8611a873e703782b27ae198fa1615748ab2d92385459b2e90b",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/preflight.py",
+          "repository_path": "rl/qwen7b_grpo/preflight.py",
+          "bytes": 2438,
+          "remote_sha256": "3d529d5a7f1172aa8823721aeb73a18abf984ca66ed4df79f2fae671dcdc274d",
+          "repository_sha256": "3d529d5a7f1172aa8823721aeb73a18abf984ca66ed4df79f2fae671dcdc274d",
+          "previous_repository_sha256": "2a51eb818668a09619b7a070af815fe244bc15c052b4372dea65a41ba3a65397",
+          "resolution": "imported_remote_version"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/requirements.txt",
+          "repository_path": "rl/qwen7b_grpo/requirements.txt",
+          "bytes": 201,
+          "remote_sha256": "7cf0fce3a397aafea9535358bd41e32ff17b8e50d8e131a1fcbf483c5e47d17d",
+          "repository_sha256": "7cf0fce3a397aafea9535358bd41e32ff17b8e50d8e131a1fcbf483c5e47d17d",
+          "previous_repository_sha256": "7cf0fce3a397aafea9535358bd41e32ff17b8e50d8e131a1fcbf483c5e47d17d",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/rewards.py",
+          "repository_path": "rl/qwen7b_grpo/rewards.py",
+          "bytes": 1217,
+          "remote_sha256": "e1fc3fdf8aaf9f4e49d37adea81fe2c55d0bd42582dd47d4a8508541dc996589",
+          "repository_sha256": "e1fc3fdf8aaf9f4e49d37adea81fe2c55d0bd42582dd47d4a8508541dc996589",
+          "previous_repository_sha256": "e1fc3fdf8aaf9f4e49d37adea81fe2c55d0bd42582dd47d4a8508541dc996589",
+          "resolution": "already_identical"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/run.sh",
+          "repository_path": "rl/qwen7b_grpo/run.sh",
+          "bytes": 1584,
+          "remote_sha256": "28c56205a8c198bbd540b00b2e9903d3175633548c3fac3db40c06149a8ffa3a",
+          "repository_sha256": "ec0a4369e2c4d979ed318f1bce81b738e013b9792ad86535fa47c92367b6715f",
+          "previous_repository_sha256": "ec0a4369e2c4d979ed318f1bce81b738e013b9792ad86535fa47c92367b6715f",
+          "resolution": "preserved_archive_safety_and_data_preparation"
+        },
+        {
+          "remote_path": "rl/qwen7b_grpo/test_rewards.py",
+          "repository_path": "rl/qwen7b_grpo/test_rewards.py",
+          "bytes": 984,
+          "remote_sha256": "dcd4a79500249b4487bccd2474b7a1663c4aa84e4038565ff855b941af2b54f2",
+          "repository_sha256": "dcd4a79500249b4487bccd2474b7a1663c4aa84e4038565ff855b941af2b54f2",
+          "previous_repository_sha256": "dcd4a79500249b4487bccd2474b7a1663c4aa84e4038565ff855b941af2b54f2",
+          "resolution": "already_identical"
+        }
+      ]
+    }
+  ],
+  "additional_metadata": [
+    {
+      "ssh_alias": "deeplearning-dl-1",
+      "source_root": "/root/autodl-tmp/deeplearning-lab",
+      "remote_path": "recommendation/generative_beauty/runs/beauty-tiger-20261009-091820-3491/environment.txt",
+      "repository_path": "docs/environments/generative-20261009.txt",
+      "bytes": 5174,
+      "remote_sha256": "74d5da26d2f6672f26ae14d6c677fa96436eec31aea13f167a908c0ae3383717",
+      "repository_sha256": "74d5da26d2f6672f26ae14d6c677fa96436eec31aea13f167a908c0ae3383717",
+      "resolution": "imported_historical_metadata"
+    },
+    {
+      "ssh_alias": "deeplearning-dl-1",
+      "source_root": "/root/autodl-tmp/deeplearning-lab",
+      "remote_path": "recommendation/generative_books/runs/books-generative-20261009-111624-8085/environment.txt",
+      "repository_path": "docs/environments/generative-20261009.txt",
+      "bytes": 5174,
+      "remote_sha256": "74d5da26d2f6672f26ae14d6c677fa96436eec31aea13f167a908c0ae3383717",
+      "repository_sha256": "74d5da26d2f6672f26ae14d6c677fa96436eec31aea13f167a908c0ae3383717",
+      "resolution": "imported_historical_metadata"
+    },
+    {
+      "ssh_alias": "deeplearning-dl-1",
+      "source_root": "/root/autodl-tmp/deeplearning-lab",
+      "remote_path": "recommendation/generative_beauty/data/download_manifest.json",
+      "repository_path": "docs/environments/beauty-content-download-manifest.json",
+      "bytes": 4045,
+      "remote_sha256": "ba50c4093b2a270c08f818e05718790df1bd72765dca78d4176f401bafed1760",
+      "repository_sha256": "ba50c4093b2a270c08f818e05718790df1bd72765dca78d4176f401bafed1760",
+      "resolution": "imported_historical_metadata"
+    },
+    {
+      "ssh_alias": "deeplearning-dl-2",
+      "source_root": "/root/autodl-tmp",
+      "remote_path": "preflight.py",
+      "repository_path": "rl/qwen7b_grpo/preflight.py",
+      "bytes": 2438,
+      "remote_sha256": "3d529d5a7f1172aa8823721aeb73a18abf984ca66ed4df79f2fae671dcdc274d",
+      "repository_sha256": "3d529d5a7f1172aa8823721aeb73a18abf984ca66ed4df79f2fae671dcdc274d",
+      "resolution": "duplicate_of_project_preflight"
+    }
+  ]
+}

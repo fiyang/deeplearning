@@ -56,4 +56,6 @@ tail -f "runs/$(cat runs/latest_attempt.txt).log"
 python3 -m unittest -v test_rewards.py
 ```
 
-需要先恢复资源、核对远端版本再复跑，见根目录 [TODO](../../TODO.md)。
+2026-10-22 已与第二台远端源码核对。`preflight.py` 使用远端实际版本：读取 `/root/autodl-tmp/qwen7b-grpo-model` 的真实 tokenizer，以随机初始化的微型 Qwen 做两步 LoRA／GRPO 接线检查，需要 GPU，分数不是实验成绩。本次没有执行它或重新训练。
+
+仓库保留单独补充的 GSM8K 准备脚本与默认不关机行为，未用远端旧 `run.sh` 覆盖。后续复跑事项见根目录 [TODO](../../TODO.md)。

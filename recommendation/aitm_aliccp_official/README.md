@@ -1,6 +1,6 @@
 # Ali-CCP：AITM 作者参数对照实验
 
-> 历史实验记录：下文结果、路径和运行状态来自此前实验；2026-10-20 归档，尚未与远端最终文件核对。数据、图表与模型产物不随 Git 分发。
+> 历史实验记录：代码于 2026-10-22 与远端核对归档；下文成绩和运行状态仍来自此前实验，本次没有复训。数据、图表与模型产物不随 Git 分发。
 
 使用 [AITM 作者仓库](https://github.com/xidongbo/AITM) 的两任务 `AITM.py` 和 `process_public_dataset.py`，移植到当前 PyTorch/CUDA 环境。原始源码、MIT 许可证和 SHA256 保存于 `official/`，固定 commit 为 `b695cfafdeaf82101aa7bd457d3bd82fd87f38e5`。论文：https://arxiv.org/pdf/2105.08489。
 
