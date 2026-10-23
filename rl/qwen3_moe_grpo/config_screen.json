@@ -1,0 +1,17 @@
+{
+  "source_run": "/root/autodl-tmp/deeplearning-lab/rl/qwen3_moe_grpo/runs/qwen3-round2-20261022-194758-1550",
+  "samples": 1024,
+  "expected_pool_size": 6193,
+  "seed": 20261024,
+  "num_generations": 4,
+  "temperature": 0.9,
+  "top_p": 0.95,
+  "top_k": 20,
+  "known_review_ids": ["train:4963"],
+  "max_compute_budget_cny": 40,
+  "max_price_cny_per_hour": 5.59,
+  "job_time_limit_seconds": 23400,
+  "platform_time_limit_seconds": 25200,
+  "shutdown_reserve_seconds": 600,
+  "purpose": "Sample unseen training questions with the fixed round2 adapter; no optimizer updates or automatic next training launch"
+}

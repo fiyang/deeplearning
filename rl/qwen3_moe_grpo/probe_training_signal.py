@@ -60,7 +60,8 @@ def summarize(groups):
                 truncated_rate=sum(sum(g['truncated']) for g in groups) / (4 * n))
 
 
-def choose_rows(tokenizer, config, source_run, data_dir, per_cohort, seed):
+def training_pools(tokenizer, config, source_run, data_dir):
+    """Rebuild the same train-only candidate pool for pilots and larger screens."""
     old = read_rows(source_run / 'train_selected.jsonl')
     validation = read_rows(source_run / 'validation_selected.jsonl')
     blocked_ids = {r['id'] for r in old + validation}
@@ -82,12 +83,17 @@ def choose_rows(tokenizer, config, source_run, data_dir, per_cohort, seed):
             tokenize=False, add_generation_prompt=True, enable_thinking=False)
         if len(tokenizer(prompt, add_special_tokens=False)['input_ids']) <= config['max_prompt_length']:
             eligible.append(dict(id=f'train:{i}', prompt=prompt, solution=solution))
+    return old, eligible, dict(seen_training_pool=len(old), unseen_eligible_pool=len(eligible),
+                              held_out_validation_count=len(validation))
+
+
+def choose_rows(tokenizer, config, source_run, data_dir, per_cohort, seed):
+    old, eligible, pools = training_pools(tokenizer, config, source_run, data_dir)
     if per_cohort > min(len(old), len(eligible)):
         raise ValueError('Not enough disjoint eligible training questions')
     result = [dict(row, cohort=cohort) for cohort, pool, offset in [('seen_train', old, 0), ('unseen_train', eligible, 1)]
               for row in random.Random(seed + offset).sample(pool, per_cohort)]
-    return result, dict(seen_training_pool=len(old), unseen_eligible_pool=len(eligible),
-                        held_out_validation_count=len(validation), per_cohort=per_cohort)
+    return result, dict(pools, per_cohort=per_cohort)
 
 
 def main():

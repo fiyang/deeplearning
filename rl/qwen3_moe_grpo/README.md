@@ -76,7 +76,26 @@ GSM8K 官方 train 共 7473 题，test 共 1319 题。第一轮只抽取 512 道
 
 来源：[采样诊断汇总与口径](reports/sampling_diagnostic.json)。它衡量固定最终模型的当前采样行为，不是历史训练重复率，也不是新的测试集成绩。
 
-下一步候选：从剩余 6193 题中先筛 512～1024 题，检查歧义与格式错误，优先加入有真实对错差异的题；训练时重新在线生成回答，限制总采样预算。先保持 lr=5e-6、rank=8、alpha=16，固定 256 题验证与 1319 题测试，再衡量每 GPU 小时获得的有效组数。这是方案，尚未实施。
+后续训练候选：检查新题的歧义与格式错误，优先加入有真实对错差异的题；训练时重新在线生成回答，限制总采样预算。先保持 lr=5e-6、rank=8、alpha=16，固定 256 题验证与 1319 题测试，再衡量每 GPU 小时获得的有效组数。
+
+## 1024 道新题筛选（已获授权，部署中）
+
+2026-10-23 用户要求从剩余 6193 道训练候选中抽 1024 道筛选，再据结果安排下一轮训练。`config_screen.json` 固定选题 seed=20261024，使用第二轮最终 adapter，temp=0.9、top_p=0.95、top_k=20，每题生成 4 个回答，共 4096 个。只采用较宽采样这一组；候选池会按 ID、题目文本、长度和可解析答案重建，必须恰好为 6193 题，排除原 1024 题训练、256 题验证和官方测试题重叠。这些“新题”指未参与参数训练，允许包含上轮 64 道仅做过推理诊断的题。
+
+输出区分三层：严格奖励部分答对；合法数值答案确有对错差异；后者中没有格式错误、截断或已知歧义标记的候选。最后一层仍需审核题意与标签，不能自动视为高质量训练集。已知有歧义的 `train:4963` 若抽中会标记。保留全量回答与数值混合候选清单，离线再从回答文本重算指标，核对选题 SHA-256、数量、顺序和候选文件。
+
+启动器 `run_signal_screen.sh` 需确认本轮预算后设置：
+
+| 环境变量 | 含义 |
+|---|---|
+| `QWEN3_SCREEN_APPROVED_BUDGET_CNY` | 本轮已获准的算力预算；用户已批准 ¥40 上限 |
+| `QWEN3_PRICE_CNY_PER_HOUR` | 实际单价；当前方案上限 ¥5.59/小时 |
+| `QWEN3_INSTANCE_STARTED_AT` | 实例本次实际开机的 Unix 秒，启动准备时间计入预算 |
+| `QWEN3_PLATFORM_DEADLINE` | 已设置的平台关机 Unix 秒，不晚于开机后 7 小时 |
+
+按前次 256 组耗时 69 分钟估算，1024 组约需 4.5～6 小时，算力约 ¥25～34。计划以 ¥40 为上限、平台开机后 7 小时关机兜底，代码最长 6.5 小时并留关机余量；成功或失败均尝试关机，现有扩容盘继续按原方式计费。用户已批准上述预算，平台关机兜底已设置为 2026-10-24 00:00（北京时间）；运行完成状态仍以最终产物为准。筛选脚本不会启动下一轮训练或创建优化器。
+
+运行入口：`bash run_signal_screen.sh`。日志为 `runs/latest_signal_screen.log`；选题与回答逐题落盘，每 16 题写 `partial_summary.json`，完成才写 `summary.json`，再由 `analyze_signal_screen.py` 输出 `verified_analysis.json`。超时保留部分结果，不标为完成。筛选得到的旧回答仅作审查，后续 GRPO 必须重新在线采样。
 
 ## 代码入口与远端运行
 
@@ -91,6 +110,7 @@ GSM8K 官方 train 共 7473 题，test 共 1319 题。第一轮只抽取 512 道
 | `run_round2.sh` / `train_round2.py` / `check_round2.py` | 第二轮：短跑覆盖两轮训练→验证和 adapter 恢复；通过后正式训练与完整测试 |
 | `round2.py` | 固定数据划分、验证选择、adapter 恢复和逐张量核对 |
 | `run_signal_probe.sh` / `probe_training_signal.py` | 第二轮模型的旧题／新题 × 两套采样参数诊断，仅推理 |
+| `run_signal_screen.sh` / `screen_training_signal.py` / `analyze_signal_screen.py` | 从 6193 道候选抽 1024 道新题、生成回答、保存数值混合候选并离线复核 |
 | `audit_reward_groups.py` / `analyze_signal_probe.py` | 离线重建训练奖励组，重新核对采样文本与汇总 |
 | `plot_epoch_accuracy.py` | 从已跟踪的 reports 重画准确率图，无需原始 runs |
 
@@ -123,7 +143,7 @@ tail -f runs/latest_signal_probe.log    # 回答采样诊断
 
 ```bash
 python3 scripts/check_local.py
-# 或仅运行 Qwen3 的 31 项测试
+# 或仅运行 Qwen3 的 37 项测试
 python3 -m unittest discover -s rl/qwen3_moe_grpo -p 'test_*.py' -v
 ```
 

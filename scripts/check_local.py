@@ -34,7 +34,7 @@ def main():
     groups = [
         ('rl/qwen7b_grpo', ['test_rewards.py']),
         ('rl/qwen3_moe_grpo', ['test_experiment.py', 'test_eval_full.py',
-                             'test_round2.py', 'test_signal_audit.py']),
+                             'test_round2.py', 'test_signal_audit.py', 'test_signal_screen.py']),
         ('recommendation/esmm_aliccp_full', ['test_download.py', 'test_ranges.py']),
         ('recommendation/esmm_aliccp_attention', ['test_queue.py']),
     ]
