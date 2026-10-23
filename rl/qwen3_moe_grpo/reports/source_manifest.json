@@ -1,0 +1,29 @@
+{
+  "description": "Small aggregate extracts from completed local run artifacts; no prompts, completions, model tensors or machine account metadata. Source hashes identify the untracked originals.",
+  "sources": [
+    {
+      "source": "qwen3-full-eval-20261022-151337-1525/summary.json",
+      "sha256": "5b72f62f4900260ec906847750a7d75447a434c843ed616c735a2922329e3757"
+    },
+    {
+      "source": "qwen3-round2-20261022-194758-1550/summary.json",
+      "sha256": "ff4cfcc7d0970b90457a0d00705a846799fc7f15afd0ba2e770f4b4d3a3761d6"
+    },
+    {
+      "source": "qwen3-round2-20261022-194758-1550/reward_group_audit.json",
+      "sha256": "3f78567cc9c36bc9a4f586f64410b36d1adf9696ab178031417a05562a1a2930"
+    },
+    {
+      "source": "qwen3-signal-probe-20261023-145626-1266/summary.json",
+      "sha256": "45f5009c4ef96264dae50f7714f1be6b6818d9eb47f08ff2dcb11cef76f05d71"
+    },
+    {
+      "source": "qwen3-signal-probe-20261023-145626-1266/analysis.json",
+      "sha256": "9ee49832f3e840bd6ddb24de57956994243a39e8db0ed8addad72d825161339f"
+    },
+    {
+      "source": "qwen3-signal-probe-20261023-145626-1266/manifest.json",
+      "sha256": "2699cde663f389299682119196b6920a2f3c11a68aaf56ea187a6c73e6a6f40b"
+    }
+  ]
+}

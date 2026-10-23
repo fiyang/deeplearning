@@ -1,0 +1,125 @@
+{
+  "model": "Qwen/Qwen3-30B-A3B",
+  "algorithm": "BF16 LoRA + GRPO",
+  "smoke": false,
+  "completed": true,
+  "optimizer_steps": 512,
+  "train_samples": 1024,
+  "epochs": 2,
+  "validation_samples": 256,
+  "adapter_updated": true,
+  "adapter_max_delta": 0.00023781679919920862,
+  "expert_adapter_updated": true,
+  "expert_adapter_max_delta": 0.0003275774361100048,
+  "trainable_expert_parameters": 314572800,
+  "training_seconds": 50089.13077202067,
+  "gpu_total_gib": 79.250732421875,
+  "peak_reserved_gib": 63.197265625,
+  "peak_allocated_gib": 62.87036943435669,
+  "note": "Fresh LoRA; fixed train-only validation selects epoch; full test used once after selection.",
+  "final": {
+    "correct": 1231,
+    "n": 1319,
+    "accuracy": 0.9332827899924185,
+    "wilson_95_ci": [
+      0.918518701267507,
+      0.9455303277318835
+    ],
+    "valid_answer_rate": 0.9924184988627748,
+    "truncated_rate": 0.0,
+    "seconds": 6294.027945429087,
+    "completion_tokens_per_second": 27.347193481243064,
+    "decoding": "greedy, non-thinking, one completion per question"
+  },
+  "versus_base": {
+    "n": 1319,
+    "baseline_correct": 1208,
+    "final_correct": 1231,
+    "baseline_accuracy": 0.9158453373768006,
+    "final_accuracy": 0.9332827899924185,
+    "accuracy_delta_pp": 1.7437452615617892,
+    "baseline_wilson_95_ci": [
+      0.8996283261387478,
+      0.9296470761467565
+    ],
+    "final_wilson_95_ci": [
+      0.918518701267507,
+      0.9455303277318835
+    ],
+    "wrong_to_right": 33,
+    "right_to_wrong": 10,
+    "mcnemar_exact_two_sided_p": 0.0006061066312668134
+  },
+  "versus_round1": {
+    "n": 1319,
+    "baseline_correct": 1225,
+    "final_correct": 1231,
+    "baseline_accuracy": 0.9287338893100834,
+    "final_accuracy": 0.9332827899924185,
+    "accuracy_delta_pp": 0.45489006823351025,
+    "baseline_wilson_95_ci": [
+      0.913569004744338,
+      0.9414086433731689
+    ],
+    "final_wilson_95_ci": [
+      0.918518701267507,
+      0.9455303277318835
+    ],
+    "wrong_to_right": 21,
+    "right_to_wrong": 15,
+    "mcnemar_exact_two_sided_p": 0.4050322461407621
+  },
+  "evaluation_policy": "Same 1319 prompts/order, greedy, non-thinking, 512 tokens; selected by validation only",
+  "selected_epoch": 2,
+  "validation": {
+    "correct": 243,
+    "n": 256,
+    "accuracy": 0.94921875,
+    "wilson_95_ci": [
+      0.915068172873268,
+      0.9700864751892441
+    ],
+    "valid_answer_rate": 0.99609375,
+    "truncated_rate": 0.0,
+    "seconds": 1274.497723557055,
+    "completion_tokens_per_second": 26.28486452412272,
+    "decoding": "greedy, non-thinking, one completion per question"
+  },
+  "validation_history": [
+    {
+      "epoch": 1,
+      "step": 256,
+      "correct": 242,
+      "n": 256,
+      "accuracy": 0.9453125,
+      "wilson_95_ci": [
+        0.9103096388011672,
+        0.9671480123216708
+      ],
+      "valid_answer_rate": 0.98828125,
+      "truncated_rate": 0.0,
+      "seconds": 1258.3890712708235,
+      "completion_tokens_per_second": 26.71749204405183,
+      "decoding": "greedy, non-thinking, one completion per question"
+    },
+    {
+      "epoch": 2,
+      "step": 512,
+      "correct": 243,
+      "n": 256,
+      "accuracy": 0.94921875,
+      "wilson_95_ci": [
+        0.915068172873268,
+        0.9700864751892441
+      ],
+      "valid_answer_rate": 0.99609375,
+      "truncated_rate": 0.0,
+      "seconds": 1274.497723557055,
+      "completion_tokens_per_second": 26.28486452412272,
+      "decoding": "greedy, non-thinking, one completion per question"
+    }
+  ],
+  "evaluation_seconds": 9630.64077442512,
+  "run_id": "qwen3-round2-20261022-194758-1550",
+  "baseline_reused_run_id": "qwen3-full-eval-20261022-151337-1525"
+}

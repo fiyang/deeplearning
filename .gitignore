@@ -9,6 +9,9 @@ backups/
 .venvs/
 venv/
 __pycache__/
+unsloth_compiled_cache/
+# Local AutoDL console screenshots may contain machine/account details.
+rl/qwen3_moe_grpo/figures/signal_probe_*.png
 *.py[cod]
 .pytest_cache/
 .mypy_cache/

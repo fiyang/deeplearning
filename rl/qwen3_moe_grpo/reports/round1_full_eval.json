@@ -1,0 +1,102 @@
+{
+  "completed": true,
+  "evaluation_only": true,
+  "model": "Qwen/Qwen3-30B-A3B",
+  "full": {
+    "n": 1319,
+    "baseline_correct": 1208,
+    "final_correct": 1225,
+    "baseline_accuracy": 0.9158453373768006,
+    "final_accuracy": 0.9287338893100834,
+    "accuracy_delta_pp": 1.288855193328279,
+    "baseline_wilson_95_ci": [
+      0.8996283261387478,
+      0.9296470761467565
+    ],
+    "final_wilson_95_ci": [
+      0.913569004744338,
+      0.9414086433731689
+    ],
+    "wrong_to_right": 29,
+    "right_to_wrong": 12,
+    "mcnemar_exact_two_sided_p": 0.011507789735332997
+  },
+  "original_subset": {
+    "n": 128,
+    "baseline_correct": 116,
+    "final_correct": 118,
+    "baseline_accuracy": 0.90625,
+    "final_accuracy": 0.921875,
+    "accuracy_delta_pp": 1.5625,
+    "baseline_wilson_95_ci": [
+      0.8432686438028733,
+      0.945556734529914
+    ],
+    "final_wilson_95_ci": [
+      0.8621517266143844,
+      0.957013089346587
+    ],
+    "wrong_to_right": 4,
+    "right_to_wrong": 2,
+    "mcnemar_exact_two_sided_p": 0.6875000000000016
+  },
+  "newly_evaluated": {
+    "n": 1191,
+    "baseline_correct": 1092,
+    "final_correct": 1107,
+    "baseline_accuracy": 0.9168765743073047,
+    "final_accuracy": 0.929471032745592,
+    "accuracy_delta_pp": 1.2594458438287153,
+    "baseline_wilson_95_ci": [
+      0.8998252373601924,
+      0.9312472663089132
+    ],
+    "final_wilson_95_ci": [
+      0.9135068395252046,
+      0.9426735947683453
+    ],
+    "wrong_to_right": 25,
+    "right_to_wrong": 10,
+    "mcnemar_exact_two_sided_p": 0.016673847800120822
+  },
+  "baseline": {
+    "correct": 1208,
+    "n": 1319,
+    "accuracy": 0.9158453373768006,
+    "wilson_95_ci": [
+      0.8996283261387478,
+      0.9296470761467565
+    ],
+    "valid_answer_rate": 0.9757391963608795,
+    "truncated_rate": 0.000758150113722517,
+    "seconds": 4013.6020932383835,
+    "completion_tokens_per_second": 42.752618723484524,
+    "decoding": "greedy, non-thinking, one completion per question"
+  },
+  "final": {
+    "correct": 1225,
+    "n": 1319,
+    "accuracy": 0.9287338893100834,
+    "wilson_95_ci": [
+      0.913569004744338,
+      0.9414086433731689
+    ],
+    "valid_answer_rate": 0.9863532979529946,
+    "truncated_rate": 0.0,
+    "seconds": 6542.282039288431,
+    "completion_tokens_per_second": 26.22005578020867,
+    "decoding": "greedy, non-thinking, one completion per question"
+  },
+  "decoding": "greedy, non-thinking, one completion per question; max 512 tokens",
+  "note": "Evaluation only; no parameter updates or test-based checkpoint selection.",
+  "baseline_original_subset_reproduction": {
+    "correctness_changes": 0,
+    "completion_text_changes": 0
+  },
+  "final_original_subset_reproduction": {
+    "correctness_changes": 0,
+    "completion_text_changes": 0
+  },
+  "run_id": "qwen3-full-eval-20261022-151337-1525",
+  "source_run_id": "qwen3-moe-grpo-20261022-100904-5909"
+}

@@ -1,0 +1,97 @@
+{
+  "method": "Unique integer reconstruction from binary reward mean, group std, zero-std fraction and generation-batch std",
+  "logging_reference": "https://github.com/huggingface/trl/blob/v0.22.2/trl/trainer/grpo_trainer.py",
+  "assumptions": "Single GPU; 4 completions per prompt; 4 prompt visits per optimizer update; binary correctness reward; equal-size generation batches",
+  "source_sha256": {
+    "metrics.jsonl": "81704b75e601cc8b3883fc726f9485dc9d6e332c2fd92d261aeec6f6c9f340b6",
+    "config_round2.json": "bc5ee1fdb8a3382ed5aba1655fb4605882574fd5fda96f11557b0099bad4dad3"
+  },
+  "optimizer_steps": 512,
+  "unique_training_questions": 1024,
+  "count_unit": "Prompt visits, not distinct question IDs; each question is visited once per epoch",
+  "overall": {
+    "total_prompt_visits": 2048,
+    "correct_completions": 7702,
+    "group_counts_by_correct_completions": {
+      "0": 87,
+      "1": 16,
+      "2": 28,
+      "3": 38,
+      "4": 1879
+    },
+    "categories": {
+      "all_correct": {
+        "count": 1879,
+        "percent": 91.748046875
+      },
+      "all_zero_reward": {
+        "count": 87,
+        "percent": 4.248046875
+      },
+      "mixed": {
+        "count": 82,
+        "percent": 4.00390625
+      }
+    }
+  },
+  "epochs": {
+    "1": {
+      "total_prompt_visits": 1024,
+      "correct_completions": 3823,
+      "group_counts_by_correct_completions": {
+        "0": 47,
+        "1": 10,
+        "2": 16,
+        "3": 23,
+        "4": 928
+      },
+      "categories": {
+        "all_correct": {
+          "count": 928,
+          "percent": 90.625
+        },
+        "all_zero_reward": {
+          "count": 47,
+          "percent": 4.58984375
+        },
+        "mixed": {
+          "count": 49,
+          "percent": 4.78515625
+        }
+      }
+    },
+    "2": {
+      "total_prompt_visits": 1024,
+      "correct_completions": 3879,
+      "group_counts_by_correct_completions": {
+        "0": 40,
+        "1": 6,
+        "2": 12,
+        "3": 15,
+        "4": 951
+      },
+      "categories": {
+        "all_correct": {
+          "count": 951,
+          "percent": 92.87109375
+        },
+        "all_zero_reward": {
+          "count": 40,
+          "percent": 3.90625
+        },
+        "mixed": {
+          "count": 33,
+          "percent": 3.22265625
+        }
+      }
+    }
+  },
+  "prompt_identity_recoverable": false,
+  "completion_text_available": false,
+  "text_duplicate_rate": null,
+  "limitations": [
+    "Reward ties do not imply identical texts.",
+    "Zero reward includes malformed final answers as well as wrong numeric answers.",
+    "Exact question identities and epoch-to-epoch transitions cannot be recovered."
+  ]
+}

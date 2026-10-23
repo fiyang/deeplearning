@@ -1,0 +1,174 @@
+{
+  "completed": true,
+  "optimizer_updates": 0,
+  "groups": 256,
+  "completions": 1024,
+  "results": {
+    "current": {
+      "seen_train": {
+        "n": 64,
+        "category_counts": {
+          "all_correct": 61,
+          "all_zero_reward": 2,
+          "mixed": 1
+        },
+        "category_rates": {
+          "all_correct": 0.953125,
+          "all_zero_reward": 0.03125,
+          "mixed": 0.015625
+        },
+        "sample_accuracy": 0.95703125,
+        "exact_all_four_same_rate": 0.078125,
+        "normalized_all_four_same_rate": 0.09375,
+        "normalized_any_duplicate_rate": 0.5625,
+        "mean_unique_normalized_texts": 3.015625,
+        "normalized_pair_duplicate_rate": 0.23697916666666666,
+        "all_same_valid_answer_rate": 0.984375,
+        "invalid_answer_rate": 0.0,
+        "truncated_rate": 0.0
+      },
+      "unseen_train": {
+        "n": 64,
+        "category_counts": {
+          "all_correct": 60,
+          "all_zero_reward": 1,
+          "mixed": 3
+        },
+        "category_rates": {
+          "all_correct": 0.9375,
+          "all_zero_reward": 0.015625,
+          "mixed": 0.046875
+        },
+        "sample_accuracy": 0.96875,
+        "exact_all_four_same_rate": 0.078125,
+        "normalized_all_four_same_rate": 0.09375,
+        "normalized_any_duplicate_rate": 0.515625,
+        "mean_unique_normalized_texts": 3.203125,
+        "normalized_pair_duplicate_rate": 0.19010416666666666,
+        "all_same_valid_answer_rate": 0.9375,
+        "invalid_answer_rate": 0.0,
+        "truncated_rate": 0.0
+      }
+    },
+    "broader": {
+      "seen_train": {
+        "n": 64,
+        "category_counts": {
+          "all_correct": 61,
+          "all_zero_reward": 1,
+          "mixed": 2
+        },
+        "category_rates": {
+          "all_correct": 0.953125,
+          "all_zero_reward": 0.015625,
+          "mixed": 0.03125
+        },
+        "sample_accuracy": 0.96875,
+        "exact_all_four_same_rate": 0.0,
+        "normalized_all_four_same_rate": 0.015625,
+        "normalized_any_duplicate_rate": 0.28125,
+        "mean_unique_normalized_texts": 3.65625,
+        "normalized_pair_duplicate_rate": 0.0703125,
+        "all_same_valid_answer_rate": 0.96875,
+        "invalid_answer_rate": 0.0,
+        "truncated_rate": 0.0
+      },
+      "unseen_train": {
+        "n": 64,
+        "category_counts": {
+          "all_correct": 59,
+          "all_zero_reward": 0,
+          "mixed": 5
+        },
+        "category_rates": {
+          "all_correct": 0.921875,
+          "all_zero_reward": 0.0,
+          "mixed": 0.078125
+        },
+        "sample_accuracy": 0.97265625,
+        "exact_all_four_same_rate": 0.0,
+        "normalized_all_four_same_rate": 0.0,
+        "normalized_any_duplicate_rate": 0.21875,
+        "mean_unique_normalized_texts": 3.703125,
+        "normalized_pair_duplicate_rate": 0.0625,
+        "all_same_valid_answer_rate": 0.921875,
+        "invalid_answer_rate": 0.0078125,
+        "truncated_rate": 0.00390625
+      }
+    }
+  },
+  "pools": {
+    "seen_training_pool": 1024,
+    "unseen_eligible_pool": 6193,
+    "held_out_validation_count": 256,
+    "per_cohort": 64
+  },
+  "peak_reserved_gib": 62.84765625,
+  "seconds": 4162.679826479405,
+  "note": "Small fixed-model pilot; not historical duplication rate or a final model accuracy evaluation",
+  "run_id": "qwen3-signal-probe-20261023-145626-1266",
+  "source_run_id": "qwen3-round2-20261022-194758-1550",
+  "settings": [
+    {
+      "name": "current",
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20
+    },
+    {
+      "name": "broader",
+      "temperature": 0.9,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  ],
+  "seed": 20261023,
+  "num_generations": 4,
+  "definitions": {
+    "duplicate": "Same full text after NFKC and whitespace normalization; not semantic similarity.",
+    "mixed": "At least one strict reward 1 and one strict reward 0 in four completions.",
+    "valid_numeric_mixed": "Both a correct and a wrong numeric answer among valid parsed answers; invalid answers ignored.",
+    "format_only_mixed": "Strict rewards are mixed, but valid parsed numeric answers do not contain both correctness classes."
+  },
+  "limitations": [
+    "64 questions per cohort and one seed; mixed-group differences are small counts.",
+    "Fixed final adapter pilot, not historical training duplication or a new accuracy benchmark.",
+    "Numerically mixed groups still need question/label quality review."
+  ],
+  "archive_sha256": "55aa14e18b282f23c2ca41aefc42d193de318a8d7607b7a49d60c1af3371cad9",
+  "recomputed_from_completions": true,
+  "numeric_mixed_summary": [
+    {
+      "setting": "current",
+      "cohort": "seen_train",
+      "n": 64,
+      "valid_numeric_mixed_rate": 0.015625,
+      "valid_numeric_mixed_count": 1,
+      "format_only_mixed_count": 0
+    },
+    {
+      "setting": "current",
+      "cohort": "unseen_train",
+      "n": 64,
+      "valid_numeric_mixed_rate": 0.046875,
+      "valid_numeric_mixed_count": 3,
+      "format_only_mixed_count": 0
+    },
+    {
+      "setting": "broader",
+      "cohort": "seen_train",
+      "n": 64,
+      "valid_numeric_mixed_rate": 0.03125,
+      "valid_numeric_mixed_count": 2,
+      "format_only_mixed_count": 0
+    },
+    {
+      "setting": "broader",
+      "cohort": "unseen_train",
+      "n": 64,
+      "valid_numeric_mixed_rate": 0.0625,
+      "valid_numeric_mixed_count": 4,
+      "format_only_mixed_count": 1
+    }
+  ]
+}

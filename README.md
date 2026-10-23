@@ -18,12 +18,15 @@
 | Amazon Beauty：RQ-VAE、TIGER、SASRec | `recommendation/generative_beauty/` | [说明](recommendation/generative_beauty/README.md) |
 | Amazon Books：TIGER、Decoder-only、恢复与扩大网络 | `recommendation/generative_books/` | [说明](recommendation/generative_books/README.md) |
 | Qwen2.5-7B：LoRA＋GRPO、规则奖励 | `rl/qwen7b_grpo/` | [强化学习实验](rl/qwen7b_grpo/README.md) |
+| Qwen3-30B-A3B：单卡 BF16 MoE LoRA＋GRPO | `rl/qwen3_moe_grpo/` | [训练、评估与采样诊断](rl/qwen3_moe_grpo/README.md)，完整 1319 题：基座 91.58% → 第一轮 92.87% → 第二轮 93.33%；含结果表、轮次图和有效训练信号分析 |
 
 [Encoder–Decoder 与 Decoder-only 推理交互图](docs/visualizations/encoder-decoder-inference.html)需下载后用浏览器打开。
 
 ## 当前归档状态
 
 2026-10-22 已连接两台无卡模式 AutoDL，核对 168 个源码、配置和说明文件，合并远端差异，补齐 GRPO 预检查、Ali-CCP 数据核验和生成式推荐环境记录。文件来源、SHA-256 与保留差异见 [本次迁移记录](docs/migrations/2026-10-22/README.md)。2026-10-20 的原始恢复记录仍保留。
+
+2026-10-23 补充第三台 A800 上已完成的 Qwen3 BF16 GRPO 两轮实验、全量评估和采样诊断。小型汇总保存在 [reports](rl/qwen3_moe_grpo/reports/)，原始题目、回答、权重与完整日志不进入 Git。本次代码归档没有启动新训练。
 
 各实验文档中的成绩、机器、运行目录和“正在运行”等描述均是当时的历史记录。训练产物与服务状态没有随代码迁移。本次核对两台项目源码仍未发现独立 MMoE 实现，已有的是 ESMM、AITM 和特征域 Attention。后续验证与实验见 [TODO](TODO.md)，来源与检查边界见 [归档记录](docs/IMPORT.md)。
 
@@ -45,7 +48,7 @@
 python3 scripts/check_local.py
 ```
 
-检查 Python/JSON/Shell 语法、AITM 参考文件哈希，运行已有的奖励解析、下载校验、训练排队控制测试；不下载数据，不启动训练。2026-10-22 已另在远端通过 61 项 CPU 模型单元测试与 5 种视觉结构检查，详见 [验证记录](docs/VALIDATION.md)。GPU 短流程仍待有卡资源时执行。
+检查 Python/JSON/Shell 语法、AITM 参考文件哈希，运行奖励解析、下载校验、训练排队控制及 Qwen3 实验与诊断测试；不下载数据，不启动训练。2026-10-22 已另在远端通过 61 项 CPU 模型单元测试与 5 种视觉结构检查，详见 [验证记录](docs/VALIDATION.md)。Qwen3 的 GPU 短流程及正式实验已完成；其他历史模型的 GPU 复跑仍列在 TODO。
 
 ## 复现规则
 

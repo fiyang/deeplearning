@@ -1,0 +1,16 @@
+# Candidate environment based on the official Qwen3 MoE notebook.
+# GPU smoke validation is required; pip freeze is saved for every actual run.
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
+triton==3.6.0
+unsloth[huggingfacenotorch]>=2026.2.1,<2026.11
+unsloth_zoo>=2026.2.1,<2026.11
+transformers==5.3.0
+trl==0.22.2
+peft>=0.18.1,<0.22
+datasets==4.3.0
+accelerate>=1.10.1,<2
+modelscope>=1.30,<2
+sentencepiece>=0.2
+protobuf
