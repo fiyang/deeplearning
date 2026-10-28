@@ -1,0 +1,95 @@
+{
+  "completed": true,
+  "kind": "validation_recall_curve",
+  "model_run": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-refinement-lr3e-5-20261028-084821-2475",
+  "checkpoint_epoch": 19,
+  "checkpoint_sha256": "2082459c1109df13e08cad35bfeb6bf308f8f9e42da907131e5876240ab8cf84",
+  "validation_users_file_sha256": "7e09f7933147254b69e77b5848ccc80c5cc657ee688ccd205efd3eecc925f04e",
+  "source_sha256": {
+    "download.py": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462",
+    "models.py": "7174513eca2281f37b226d72ed7c576f544d9e9ead10c793b6097537421e60aa",
+    "prepare.py": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7",
+    "train.py": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba",
+    "test_pipeline.py": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098",
+    "make_smoke_fixture.py": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4",
+    "start_train.sh": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7",
+    "run_pipeline.sh": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9",
+    "benchmark_capacity.py": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd",
+    "start_20epochs.sh": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54"
+  },
+  "data_signature": {
+    "dataset_info.json": "e3f91e66357cd67e4e54699a1f5a150d4c28e3dfa57ff73c2abf4543cca8ea81",
+    "quantizer_info.json": "a4176fc95b5efeaeb97e2cac92f3e66842a20958689b60e664ccf0d9b8a92fc7",
+    "semantic_ids.npy": "46c9399b6e58555801bb9b00f11ee3d4bedff7471b42ce0cbb8b51479d3513f2"
+  },
+  "diagnostic_sha256": "adc873fa4677a2cb67449d0a0dcc8e2915530e54a049b40c6adff51a7a89a933",
+  "optimizer_updates": 0,
+  "test_evaluated": false,
+  "items": 367982,
+  "baseline_beam20": {
+    "recall@5": 0.0312,
+    "ndcg@5": 0.023304280663119344,
+    "recall@10": 0.0406,
+    "ndcg@10": 0.026342752532907666,
+    "recall@20": 0.0509,
+    "ndcg@20": 0.028949756018410062,
+    "valid_result_fraction": 0.9998475,
+    "duplicate_rows": 0,
+    "requests": 20000,
+    "seconds": 18.0205217320472,
+    "split": "val",
+    "beam_size": 20,
+    "ranking": "full_catalog_no_sampled_negatives",
+    "seen_filter": "all earlier items, not only model input history",
+    "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+  },
+  "beam100_metrics": {
+    "recall@5": 0.03225,
+    "ndcg@5": 0.02383313262421596,
+    "recall@10": 0.04335,
+    "ndcg@10": 0.027412197420674283,
+    "recall@20": 0.05885,
+    "ndcg@20": 0.031311516500950154,
+    "recall@50": 0.0876,
+    "ndcg@50": 0.037005036485945234,
+    "recall@100": 0.1116,
+    "ndcg@100": 0.04091479394756432,
+    "valid_result_fraction": 1.0,
+    "duplicate_rows": 0,
+    "requests": 20000,
+    "seconds": 69.60669409576803,
+    "split": "val",
+    "beam_size": 100,
+    "ranking": "full_catalog_no_sampled_negatives",
+    "seen_filter": "all earlier items, not only model input history",
+    "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+  },
+  "curve": {
+    "requests": 20000,
+    "hits": {
+      "10": 867,
+      "50": 1752,
+      "100": 2232
+    },
+    "recall@10": 0.04335,
+    "recall@50": 0.0876,
+    "recall@100": 0.1116,
+    "rank_buckets": {
+      "1-10": 867,
+      "11-50": 885,
+      "51-100": 480,
+      "not_in_top100": 17768
+    },
+    "top100_valid_fraction": 1.0,
+    "recovered_after_top10": 1365
+  },
+  "search_change_at10": {
+    "gained": 123,
+    "lost": 68,
+    "delta_pp": 0.27500000000000024
+  },
+  "peak_allocated_mib": 2106.140625,
+  "elapsed_seconds": 94.93378362245858,
+  "completed_at": "2026-10-28T09:20:37.810317+08:00",
+  "note": "Same frozen checkpoint and validation users. All curve cutoffs are prefixes of one beam=100 list. Full catalog, all previously seen items filtered. No test-set tuning. Training may run concurrently; timings are not isolated inference benchmarks. A miss is outside the generated Top-100, not proof of exact model rank >100."
+}

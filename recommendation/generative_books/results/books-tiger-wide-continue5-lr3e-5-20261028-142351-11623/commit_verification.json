@@ -1,0 +1,145 @@
+{
+  "captured_at": "2026-10-28T15:44:19.062335+08:00",
+  "source_sha256": {
+    "tiger_refinement/train_refinement.py": "753008d086ab473571ad5ed6a85dcecfd52287eb0d911ab24be5c4c4fbabcc0e",
+    "tiger_refinement/test_refinement.py": "699a51421c4ff4d093ad1b10665a2614477e1c89357566c08459a6aa7743da21",
+    "tiger_refinement/start_train.sh": "3b4c2334bb4e61e7167d5485ac77f3f98144814274096eeb0037a8224f9a9126",
+    "tiger_growth/train_growth.py": "30441b1f819c445e2b7a091df79384d3e320f6dbb034c53ac4bf6bb5b6c74cf5",
+    "tiger_growth/growth.py": "642db076252c5e8ef24e235f714faca5316f63a107cafff026602bce2e3de5d1",
+    "tiger_growth/start_train.sh": "ca54db9b30f06c30a35c52bec18ab03fbd8374934c8f82f305122d65cab3ca54",
+    "tiger_growth/test_growth.py": "07abbd35a4b71610393585b005b98b7770809d67e130cd4ca9db02b031c56c7a",
+    "tiger_continuation/train_continuation.py": "4459d57e9bffe5232ca60c06ffd29dfe856867bb169aba1de579540051ba8883",
+    "tiger_continuation/test_continuation.py": "f1cbd8d2307a6f9a97e2ee5b19bbcc89447b2a34d3ecab692d1453d7367dfdfb",
+    "tiger_continuation/model_factory.py": "27410633ee4435129aa2bbf76aea3b50094c65ba607c324bd3a330befb4486e4",
+    "tiger_continuation/start_train.sh": "4b35a1d50cb7a7c126ab1b9165baed85f0e94edd1f9df8a669cea86f4bda4bab",
+    "diagnostics/beam_sweep.py": "b3f1bd2e8687190bf5990efec3902e2d7e93ebe736f19cb8b36b874bcc663cc4",
+    "diagnostics/test_recall_curve.py": "7bf39ea2e025eae73f6277c4d727f119bebe36d1b448584d938f126c24bb4ddc",
+    "diagnostics/recall_curve.py": "adc873fa4677a2cb67449d0a0dcc8e2915530e54a049b40c6adff51a7a89a933",
+    "diagnostics/test_beam_sweep.py": "cbdd002f00474e565e8d9032aded2a8e3efcf8b7aacb172fda9061acaf137f5f"
+  },
+  "checks": [
+    {
+      "directory": "tiger_refinement",
+      "returncode": 0,
+      "seconds": 3.2377754282206297,
+      "output": "test_finite_gradients_are_clipped (test_refinement.Tests.test_finite_gradients_are_clipped) ... ok\ntest_nonfinite_is_rejected_before_gradient_mutation (test_refinement.Tests.test_nonfinite_is_rejected_before_gradient_mutation) ... ok\ntest_optimizer_scheduler_resume_equivalence (test_refinement.Tests.test_optimizer_scheduler_resume_equivalence) ... ok\ntest_schedule_boundaries (test_refinement.Tests.test_schedule_boundaries) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 1.022s\n\nOK\n"
+    },
+    {
+      "directory": "tiger_growth",
+      "returncode": 0,
+      "seconds": 7.713776748627424,
+      "output": "test_beam_predictions_and_scores_preserved (test_growth.GrowthTests.test_beam_predictions_and_scores_preserved) ... ok\ntest_large_initial_drift_rejected (test_growth.GrowthTests.test_large_initial_drift_rejected) ... ok\ntest_logits_loss_padding_and_tied_output_preserved (test_growth.GrowthTests.test_logits_loss_padding_and_tied_output_preserved) ... ok\ntest_size_gradients_symmetry_breaking_and_reload (test_growth.GrowthTests.test_size_gradients_symmetry_breaking_and_reload) ... /root/autodl-tmp/deeplearning-lab/recommendation/generative_books/tiger_growth/test_growth.py:53: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)\n  self.assertGreater(float((e[:,:128]-e[:,128:]).abs().max()),0.)\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 2.220s\n\nOK\n"
+    },
+    {
+      "directory": "tiger_continuation",
+      "returncode": 0,
+      "seconds": 6.877418094314635,
+      "output": "test_optimizer_scheduler_and_rng_resume_match_next_update (test_continuation.ContinuationTests.test_optimizer_scheduler_and_rng_resume_match_next_update) ... ok\ntest_strict_parent_load_keeps_predictions_and_width (test_continuation.ContinuationTests.test_strict_parent_load_keeps_predictions_and_width) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 1.881s\n\nOK\n"
+    },
+    {
+      "directory": "diagnostics",
+      "returncode": 0,
+      "seconds": 1.7713145017623901,
+      "output": "test_only_top_ten_count (test_beam_sweep.MetricsTests.test_only_top_ten_count) ... ok\ntest_paired_gains_and_losses_do_not_hide_regressions (test_beam_sweep.MetricsTests.test_paired_gains_and_losses_do_not_hide_regressions) ... ok\ntest_prefix_match_is_not_item_match_and_invalid_slots_never_hit (test_beam_sweep.MetricsTests.test_prefix_match_is_not_item_match_and_invalid_slots_never_hit) ... ok\ntest_duplicate_candidates_rejected (test_recall_curve.RankReportTests.test_duplicate_candidates_rejected) ... ok\ntest_exact_boundaries_and_nested_cutoffs (test_recall_curve.RankReportTests.test_exact_boundaries_and_nested_cutoffs) ... ok\ntest_invalid_padding_never_hits (test_recall_curve.RankReportTests.test_invalid_padding_never_hits) ... ok\ntest_truncated_predictions_cannot_claim_recall100 (test_recall_curve.RankReportTests.test_truncated_predictions_cannot_claim_recall100) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "remote_run": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-wide-continue5-lr3e-5-20261028-142351-11623",
+  "progress": {
+    "status.json": {
+      "refinement_epoch": 3,
+      "cumulative_epoch": 26,
+      "batch": 13200,
+      "batches": 13842,
+      "update_before_batch": 40883,
+      "lr_used": 1.2826123888147347e-05,
+      "stage": "training",
+      "model": "tiger",
+      "smoke": false,
+      "epochs": 28,
+      "update": 40884,
+      "loss": 2.802790403366089,
+      "gradient_norm_before_clip": 0.4248734712600708,
+      "gradient_norm_max_this_epoch": 0.5823066234588623,
+      "next_lr": 1.2825529934714654e-05,
+      "examples_per_second": 4401.5920232334765,
+      "peak_allocated_mib": 5032.37548828125
+    },
+    "history.json": [
+      {
+        "epoch": 24,
+        "refinement_epoch": 1,
+        "update": 13842,
+        "train_loss": 2.835002223289748,
+        "gradient_norm_mean": 0.42346424208850364,
+        "gradient_norm_max": 0.6045528054237366,
+        "next_lr": 2.756501983958817e-05,
+        "training_seconds": 1614.0855740616098,
+        "peak_allocated_mib": 5031.029296875,
+        "validation": {
+          "recall@5": 0.03375,
+          "ndcg@5": 0.025089911261955436,
+          "recall@10": 0.04365,
+          "ndcg@10": 0.028284884711387518,
+          "recall@20": 0.0539,
+          "ndcg@20": 0.030889019064891277,
+          "valid_result_fraction": 0.999765,
+          "duplicate_rows": 0,
+          "requests": 20000,
+          "seconds": 14.938289840705693,
+          "split": "val",
+          "beam_size": 20,
+          "ranking": "full_catalog_no_sampled_negatives",
+          "seen_filter": "all earlier items, not only model input history",
+          "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+        }
+      },
+      {
+        "epoch": 25,
+        "refinement_epoch": 2,
+        "update": 27684,
+        "train_loss": 2.8309250783611777,
+        "gradient_norm_mean": 0.4320560976283741,
+        "gradient_norm_max": 0.6242828965187073,
+        "next_lr": 2.0847444396247834e-05,
+        "training_seconds": 1621.4030835749581,
+        "peak_allocated_mib": 5032.37548828125,
+        "validation": {
+          "recall@5": 0.03415,
+          "ndcg@5": 0.025441951490521343,
+          "recall@10": 0.04355,
+          "ndcg@10": 0.02847551247460287,
+          "recall@20": 0.05465,
+          "ndcg@20": 0.031287895967000316,
+          "valid_result_fraction": 0.9997675,
+          "duplicate_rows": 0,
+          "requests": 20000,
+          "seconds": 14.928197614848614,
+          "split": "val",
+          "beam_size": 20,
+          "ranking": "full_catalog_no_sampled_negatives",
+          "seen_filter": "all earlier items, not only model input history",
+          "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+        }
+      }
+    ],
+    "best_validation.json": {
+      "recall@5": 0.03415,
+      "ndcg@5": 0.025441951490521343,
+      "recall@10": 0.04355,
+      "ndcg@10": 0.02847551247460287,
+      "recall@20": 0.05465,
+      "ndcg@20": 0.031287895967000316,
+      "valid_result_fraction": 0.9997675,
+      "duplicate_rows": 0,
+      "requests": 20000,
+      "seconds": 14.928197614848614,
+      "split": "val",
+      "beam_size": 20,
+      "ranking": "full_catalog_no_sampled_negatives",
+      "seen_filter": "all earlier items, not only model input history",
+      "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+    }
+  },
+  "note": "Regression tests ran on CPU only; active GPU training was not modified.",
+  "local_remote_source_match": true
+}

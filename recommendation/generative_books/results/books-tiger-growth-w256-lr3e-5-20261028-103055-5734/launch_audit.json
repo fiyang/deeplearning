@@ -1,0 +1,192 @@
+{
+  "observed_at": "2026-10-28T10:32:56.678169+08:00",
+  "run_dir": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-growth-w256-lr3e-5-20261028-103055-5734",
+  "status": {
+    "refinement_epoch": 1,
+    "cumulative_epoch": 22,
+    "batch": 600,
+    "batches": 13842,
+    "update_before_batch": 599,
+    "lr_used": 2.999961206990206e-05,
+    "stage": "training",
+    "model": "tiger",
+    "smoke": false,
+    "epochs": 24,
+    "update": 600,
+    "loss": 2.8076558113098145,
+    "gradient_norm_before_clip": 0.3699996769428253,
+    "gradient_norm_max_this_epoch": 0.4964792728424072,
+    "next_lr": 2.9999604193388207e-05,
+    "examples_per_second": 4345.764722954477,
+    "peak_allocated_mib": 5032.5517578125
+  },
+  "config": {
+    "parent_run": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-refinement-lr3e-5-20261028-084821-2475",
+    "parent_checkpoint_sha256": "05ee91174cdc63d750906841f0c95daeae3ad1098e772cea0ea71e1792a6962d",
+    "data_dir": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/data",
+    "data_signature": {
+      "dataset_info.json": "e3f91e66357cd67e4e54699a1f5a150d4c28e3dfa57ff73c2abf4543cca8ea81",
+      "quantizer_info.json": "a4176fc95b5efeaeb97e2cac92f3e66842a20958689b60e664ccf0d9b8a92fc7",
+      "semantic_ids.npy": "46c9399b6e58555801bb9b00f11ee3d4bedff7471b42ce0cbb8b51479d3513f2"
+    },
+    "inherited_source_sha256": {
+      "download.py": "6d945a28876f3431fb9703ddb714ad0c5e586d7e73b0e2a625dc2da69fd86462",
+      "models.py": "7174513eca2281f37b226d72ed7c576f544d9e9ead10c793b6097537421e60aa",
+      "prepare.py": "e316875679da0e9c0f0275e47508c227b190535d39bad43f3d037bb6a37da1f7",
+      "train.py": "7155068f6333b32acd419380e4abf18a8a731b903fcdaf99df23ab5770fbceba",
+      "test_pipeline.py": "88711bdfa0e2febbc672f4e425c1ae8203f51fad332e93176d9f0afacbbba098",
+      "make_smoke_fixture.py": "e37c0ea11044b708074e5c46e81fb9efbbe4780b548950b3adce8e497cd0a2b4",
+      "start_train.sh": "f9943c11b8b78ff5ae99b085660ee3a8cec953120933f8d1258e86d92fb360c7",
+      "run_pipeline.sh": "0727076f7a485a60e0740bbc6fad45bf8c2d77e7a6d554323865ea1f71af78d9",
+      "benchmark_capacity.py": "e632e2736c593c8d36a8f59e0be73b3005d30993e24a2a317e5b8eb6b98226fd",
+      "start_20epochs.sh": "f4dcdb20ba1c0239802b81a9ca518e9b776e8c37a05fcb8161f051d689f60a54"
+    },
+    "source_sha256": {
+      "growth.py": "642db076252c5e8ef24e235f714faca5316f63a107cafff026602bce2e3de5d1",
+      "train_growth.py": "30441b1f819c445e2b7a091df79384d3e320f6dbb034c53ac4bf6bb5b6c74cf5",
+      "test_growth.py": "07abbd35a4b71610393585b005b98b7770809d67e130cd4ca9db02b031c56c7a",
+      "start_train.sh": "ca54db9b30f06c30a35c52bec18ab03fbd8374934c8f82f305122d65cab3ca54"
+    },
+    "variant": "tiger_width256_ff2048_warm_growth",
+    "parameter_count": 14281344,
+    "growth": {
+      "d_model": [
+        128,
+        256
+      ],
+      "d_ff": [
+        1024,
+        2048
+      ],
+      "layers": [
+        4,
+        4
+      ],
+      "initialization": "copy channels, divide input projections, compensate tied LM output"
+    },
+    "additional_epochs": 3,
+    "lr": 3e-05,
+    "minimum_lr": 3e-06,
+    "batch_size": 512,
+    "eval_batch_size": 64,
+    "warmup_steps": 500,
+    "patience": 2,
+    "seed": 42,
+    "smoke": false,
+    "smoke_train_examples": 16384,
+    "beam_size": 20,
+    "precision": "BF16",
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "optimizer": "AdamW reset (parent best.pt contains model only)",
+    "scheduler": "warmup from 0.1x peak to peak, then cosine to 0.1x peak",
+    "validation_users_sha256": "7e09f7933147254b69e77b5848ccc80c5cc657ee688ccd205efd3eecc925f04e"
+  },
+  "initialization_check": {
+    "fp32_max_abs_logit_error": 1.71661376953125e-05,
+    "base_loss": 2.802957057952881,
+    "grown_loss": 2.80295729637146,
+    "checked_requests": 32,
+    "parent_validation": {
+      "recall@5": 0.0314,
+      "ndcg@5": 0.023579522029674057,
+      "recall@10": 0.04075,
+      "ndcg@10": 0.02659283871187245,
+      "recall@20": 0.0507,
+      "ndcg@20": 0.029100434196655364,
+      "valid_result_fraction": 0.9998275,
+      "duplicate_rows": 0,
+      "requests": 20000,
+      "seconds": 11.983410588465631,
+      "split": "val",
+      "beam_size": 20,
+      "ranking": "full_catalog_no_sampled_negatives",
+      "seen_filter": "all earlier items, not only model input history",
+      "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+    },
+    "grown_initial_validation": {
+      "recall@5": 0.0315,
+      "ndcg@5": 0.023607602345256298,
+      "recall@10": 0.04065,
+      "ndcg@10": 0.026557084504640217,
+      "recall@20": 0.05025,
+      "ndcg@20": 0.028982735552924577,
+      "valid_result_fraction": 0.9998175,
+      "duplicate_rows": 0,
+      "requests": 20000,
+      "seconds": 14.06279001198709,
+      "split": "val",
+      "beam_size": 20,
+      "ranking": "full_catalog_no_sampled_negatives",
+      "seen_filter": "all earlier items, not only model input history",
+      "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+    },
+    "recall10_delta_pp": -0.010000000000000286,
+    "note": "Function preserved in FP32 eval; BF16 rounding and training dropout differ."
+  },
+  "smoke_run": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-growth-smoke-20261028-102912",
+  "smoke_status": {
+    "stage": "smoke_complete",
+    "test_evaluated": false
+  },
+  "smoke_history": [
+    {
+      "epoch": 22,
+      "refinement_epoch": 1,
+      "update": 32,
+      "train_loss": 2.845939077436924,
+      "gradient_norm_mean": 0.3742268430069089,
+      "gradient_norm_max": 0.4279841482639313,
+      "next_lr": 1.8684056953462328e-05,
+      "training_seconds": 3.8955398788675666,
+      "peak_allocated_mib": 4976.45703125,
+      "validation": {
+        "recall@5": 0.078125,
+        "ndcg@5": 0.04988337601900482,
+        "recall@10": 0.078125,
+        "ndcg@10": 0.04988337601900482,
+        "recall@20": 0.078125,
+        "ndcg@20": 0.04988337601900482,
+        "valid_result_fraction": 1.0,
+        "duplicate_rows": 0,
+        "requests": 64,
+        "seconds": 0.05719754099845886,
+        "split": "val",
+        "beam_size": 20,
+        "ranking": "full_catalog_no_sampled_negatives",
+        "seen_filter": "all earlier items, not only model input history",
+        "users_sha256": "e9df40be7ae3791ba34beda01a6bd6eda3669fdc732be379eb3301ed4734bf48"
+      }
+    },
+    {
+      "epoch": 23,
+      "refinement_epoch": 2,
+      "update": 64,
+      "train_loss": 2.831757254898548,
+      "gradient_norm_mean": 0.3772744704037905,
+      "gradient_norm_max": 0.4157440662384033,
+      "next_lr": 3e-06,
+      "training_seconds": 4.08233239594847,
+      "peak_allocated_mib": 4973.8134765625,
+      "validation": {
+        "recall@5": 0.078125,
+        "ndcg@5": 0.04988337601900482,
+        "recall@10": 0.078125,
+        "ndcg@10": 0.04988337601900482,
+        "recall@20": 0.078125,
+        "ndcg@20": 0.04988337601900482,
+        "valid_result_fraction": 1.0,
+        "duplicate_rows": 0,
+        "requests": 64,
+        "seconds": 0.1133055929094553,
+        "split": "val",
+        "beam_size": 20,
+        "ranking": "full_catalog_no_sampled_negatives",
+        "seen_filter": "all earlier items, not only model input history",
+        "users_sha256": "e9df40be7ae3791ba34beda01a6bd6eda3669fdc732be379eb3301ed4734bf48"
+      }
+    }
+  ],
+  "machine_preference": "keep running",
+  "process_timeout_seconds": 7200
+}

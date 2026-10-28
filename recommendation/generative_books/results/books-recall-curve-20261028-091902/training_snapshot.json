@@ -1,0 +1,69 @@
+{
+  "observed_at": "2026-10-28T09:22:14.721732+08:00",
+  "run_dir": "/root/autodl-tmp/deeplearning-lab/recommendation/generative_books/runs/books-tiger-refinement-lr3e-5-20261028-084821-2475",
+  "status": {
+    "refinement_epoch": 2,
+    "cumulative_epoch": 20,
+    "batch": 10000,
+    "batches": 13842,
+    "update_before_batch": 23841,
+    "lr_used": 1.3599291628217573e-05,
+    "stage": "training",
+    "model": "tiger",
+    "smoke": false,
+    "epochs": 21,
+    "update": 23842,
+    "loss": 2.900425910949707,
+    "gradient_norm_before_clip": 0.4472140073776245,
+    "gradient_norm_max_this_epoch": 2.4598469734191895,
+    "next_lr": 1.359828201096765e-05,
+    "examples_per_second": 5988.182804168773
+  },
+  "history": [
+    {
+      "epoch": 19,
+      "refinement_epoch": 1,
+      "update": 13842,
+      "train_loss": 2.945015659955265,
+      "gradient_norm_mean": 0.47082016067497306,
+      "gradient_norm_max": 5.42431640625,
+      "next_lr": 2.3546192843808404e-05,
+      "training_seconds": 1140.2027754420415,
+      "validation": {
+        "recall@5": 0.0312,
+        "ndcg@5": 0.023304280663119344,
+        "recall@10": 0.0406,
+        "ndcg@10": 0.026342752532907666,
+        "recall@20": 0.0509,
+        "ndcg@20": 0.028949756018410062,
+        "valid_result_fraction": 0.9998475,
+        "duplicate_rows": 0,
+        "requests": 20000,
+        "seconds": 13.062241387553513,
+        "split": "val",
+        "beam_size": 20,
+        "ranking": "full_catalog_no_sampled_negatives",
+        "seen_filter": "all earlier items, not only model input history",
+        "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+      }
+    }
+  ],
+  "best_validation": {
+    "recall@5": 0.0312,
+    "ndcg@5": 0.023304280663119344,
+    "recall@10": 0.0406,
+    "ndcg@10": 0.026342752532907666,
+    "recall@20": 0.0509,
+    "ndcg@20": 0.028949756018410062,
+    "valid_result_fraction": 0.9998475,
+    "duplicate_rows": 0,
+    "requests": 20000,
+    "seconds": 13.062241387553513,
+    "split": "val",
+    "beam_size": 20,
+    "ranking": "full_catalog_no_sampled_negatives",
+    "seen_filter": "all earlier items, not only model input history",
+    "users_sha256": "c01ba0d341144e47200a5e7451aa809fa63b82425f20b639dc1b289a8273a810"
+  },
+  "machine_preference": "keep running"
+}
